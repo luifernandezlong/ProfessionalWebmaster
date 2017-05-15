@@ -1,0 +1,68 @@
+/*INICIO*/
+
+
+.frase{
+	margin-top: 45%;
+    background: red;
+}
+
+.nav_home{
+	margin-top: 10%;
+
+}
+
+.logo_chico{
+    position: absolute;
+    width: 20%;
+    margin: -15% -10%; 
+    
+}
+
+ .fondo_inicio:hover .logo_chico{
+    width: 8%;
+    -webkit-transition: all 0.5s;
+    moz-webkit-transition:all 0.5s;
+    o-webkit-transition:all 0.5s;
+    margin:-15% -4%;
+}
+
+
+
+
+/*.nav_sitio{
+	margin-bottom: 15%;
+}
+*/
+/*FIN INICIO*/
+
+
+
+
+
+/*QUIEN SOY*/
+.foto_qs{
+	width: 38%;
+}
+.texto_qs{
+    line-height: 1.15em;
+    text-align: left;
+    float: right;
+    width: 50%;
+    font-size: 1.25em;
+    /*padding-right: 6%; */
+}
+.botoncontactame{
+    margin-top:28%;
+    margin-left: 17%;
+}
+
+.botoncv{
+	margin-top: 31%;
+	margin-left: 17.5%;
+}
+
+
+
+
+
+/*FIN QUIEN SOY*/

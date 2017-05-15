@@ -1,0 +1,698 @@
+/*BLUR EN FOTO PPAL
+WORD-WRAP
+:FOCUS NAV;
+RESPONSIVE NAV
+
+TRANSICION BOTON CONTACTAME*/
+
+
+:root {
+  --fucsia: #fc60de;
+  --naranja: #f68a29;
+}
+
+/*font-family: 'Roboto', sans-serif;*/
+@font-face {
+    font-family: 'robotolight';
+    src: url('fuentes/roboto-light-webfont.woff2') format('woff2'),
+    url('fuentes/roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 18px;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+
+.holder{
+    max-width: 960px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+/*INICIO HEAD*/
+.header{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    background: white;
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.50);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.50);
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.50);
+    
+}
+.nav_sitio{
+    margin: 0 auto;
+    padding: 0;
+    max-width: 960px;
+}
+
+
+.nav_sitio ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav_sitio ul li{
+    margin: 0;
+    display: inline-block;
+    flex:1;
+    
+}
+
+.nav_sitio ul li a{
+    margin: 0;
+    color:gray;
+    text-decoration: none;
+    padding: 0.2em 0em 0em 0em;
+    display: block;
+    font-size: 1.4em;
+    /*font-weight: 300;*/
+}
+
+.nav_derecha{
+    text-align: right;
+
+}
+
+.nav_izquierda{
+    text-align: left;
+    
+
+}
+.nav_centro{
+    text-align: center;
+    
+}
+.nav_sitio ul li a hr{
+    margin-bottom: 0.1em;
+}
+
+hr{
+    border-style: none;
+    border-bottom: thin solid gray;
+    margin: 0;
+    padding-top: 0.5%;
+}
+hr.inicio{
+    
+    width: 33%;
+}
+hr.quien_soy{
+    width: 58%;
+}
+hr.portfolio{
+    width: 60%;
+    margin: 0 auto;
+} 
+hr.servicios{
+    width: 56.5%;
+    margin: 0 0 0 auto;
+} 
+hr.contacto{
+    width: 58%;
+    margin: 0 0 0 auto;
+} 
+hr.servicios2{
+    width: 56.5%;
+    margin: auto;
+} 
+
+.nav_sitio ul li a:hover {   
+    color:var(--fucsia);
+}
+
+.nav_sitio ul li a:hover hr{
+   border-bottom: thin solid var(--fucsia);
+}
+
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color:var(--fucsia);
+    font-size: 3.51em;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+
+.click{
+    font-weight: 500;
+}
+
+
+/*FIN HEAD*/
+/*fin base*/
+
+
+
+
+
+
+
+
+/*INICIO HOME*/
+/*home que funciona
+.fondo_inicio{
+  background: url(../img/fondo_inicio.jpg) fixed center center #444;
+    background-size: cover; 
+    height: 100%;
+    z-index: 2;
+    position: relative;
+
+}
+.logo_chico{
+    width: 40%;
+    margin: 30%;
+    z-index: 3;
+   
+
+}
+*/
+.fotofondo{
+    width:100%;
+    height: 100%;
+    background:url(../img/fondo_inicio.jpg) no-repeat center #444;
+    background-size:cover;
+    position: absolute;
+    left:0;
+    top: 0;
+    z-index: 2;
+}
+
+.fondo_inicio{
+    height: 100%;
+    z-index: 2;
+    position: relative;
+
+}
+.logo_chico{
+    position: absolute;
+    width: 20%;
+    margin: -12% -10%; 
+    
+    
+}
+
+.nav_home{
+    margin: 0 auto;
+    font-size: 1.4em;
+    padding: 0;
+    font-weight: 300;
+    width: 80%;
+    visibility: hidden;
+}
+
+.nav_home ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+    display: flex;
+}
+
+.nav_home ul li{
+    margin: 0;
+    width: 20%;
+    flex:1;
+}
+
+.nav_home ul li a{
+    text-decoration:none;
+    display: block;
+    color:white;
+    font-family: 'Roboto';
+    font-weight: 300;
+
+}
+
+.nav_home ul li a hr{
+    border-style: none;
+    margin-top: 1%;
+    border-bottom: thin white solid;
+    visibility: hidden;
+}
+
+
+.nav_home ul li a:hover hr{
+    visibility: visible;
+}
+
+.frase{
+    color: white;
+    font-weight: 400;
+    margin-top:40%;
+    margin-bottom: 10%;
+    visibility: hidden;
+}
+.cita{
+    font-size:1.2em;
+    text-align: center;
+    display: block;
+    margin-bottom: 0.4em;
+
+}
+.autor{
+    font-size: 1em;
+    font-style: italic;
+    color: white;
+    text-align: right;
+    margin-left: 64.5%;
+}
+
+
+
+.fondo_inicio:hover .logo_chico{
+    width: 8%;
+    -webkit-transition: all 0.5s;
+    moz-webkit-transition:all 0.5s;
+    o-webkit-transition:all 0.5s;
+    margin:-12% -4%;
+}
+
+.fondo_inicio:hover .frase{
+    visibility: visible;
+    transition-delay:0.5s;
+}
+.fondo_inicio:hover .nav_home{
+    visibility: visible; 
+    -webkit-transition-delay: 0.5s; /* Safari */
+    transition-delay: 0.5s;
+}
+
+
+/*FIN HOME*/
+
+
+
+/*INICIO QUIEN SOY*/
+
+.contenido_qs{
+    width:65%;
+    /*height: 80%;*/
+    padding-top: 15%;
+    margin: auto;
+}
+
+.descripcionpropia{
+    display: block;
+    height: 50%;
+    padding-top: 12%;
+}
+
+.foto_qs{
+ /*position: relative;*/
+ /*padding-top: 25%;*/
+ width: 40%;
+ float: left;
+ /*padding-right: 6%;*/
+}
+
+
+.texto_qs{
+    line-height: 1.2em;
+    text-align: left;
+    width: 53%;
+    padding-top: 5%;
+    float: right;
+    font-family: 'Roboto' sans-serif;
+    font-weight: 300;
+    font-size: 1.4em;
+    color:gray;
+    
+}
+
+.bolditalic{
+    font-size: 1.049em;
+    font-weight: 400;
+    font-style: italic;
+}
+.bold{
+    font-weight: 500;
+}
+
+a.contactame{ 
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.4em;
+    color: gray; 
+    float: left;
+    position: relative;
+    z-index: 0;
+    
+}
+.fondocontactame{
+    background: var(--fucsia);
+    height:2em;
+    width: 2em;
+    filter: alpha(opacity=50); 
+    opacity: 0.5;
+    border-radius: 100%;
+    float: left;
+    z-index: -1;
+    position: relative;
+    visibility: visible;
+    margin-left: -10.4em;
+    margin-top: -3%;
+    
+}
+
+
+.boton_circulo{
+    background: var(--fucsia);
+    height: 2em;
+    width: 10.85em;
+    border-top-left-radius: 15% 80%;
+    border-bottom-left-radius: 15% 80%;
+    border-top-right-radius: 15% 80%;
+    border-bottom-right-radius: 15% 80%;
+    visibility: hidden;
+    
+}
+.botoncontactame:hover .fondocontactame{
+    visibility: hidden;
+
+}
+.botoncontactame:hover .boton_circulo{
+    visibility: visible; 
+
+
+}
+.botoncontactame{
+    width: 15%;
+    position: absolute;
+    margin-top:22%;
+    margin-left: 14%;
+}
+
+.botoncv{
+    width: 18%;
+    margin-top: 25%;
+    margin-left: 14.2%;
+    position: absolute;
+    font-size: 0.8em;
+}
+
+a.cv{
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    font-size:1em;
+    color: gray; 
+    float: left;
+    position: relative;
+    z-index: 0;
+    padding-left: 8%;
+}
+.fondo_botoncv{
+    background: var(--fucsia);
+    height:2em;
+    width: 2em;
+    filter: alpha(opacity=50); 
+    opacity: 0.5;
+    border-radius: 100%;
+    float: left;
+    z-index: -1;
+    position: relative;
+    visibility: visible;
+    margin-left: -9.1em;
+    margin-top: -1%;
+    
+}
+.boton_circulo2{
+    background: var(--fucsia);
+    height: 2em;
+    width: 9.6em;
+    border-top-left-radius: 18% 80%;
+    border-bottom-left-radius: 18% 80%;
+    border-top-right-radius: 18% 80%;
+    border-bottom-right-radius: 18% 80%;
+    filter: alpha(opacity=50); 
+    position: relative;
+    z-index: -1;
+    margin-top: -1%;
+    margin-left: -1%;
+    visibility: hidden;
+}
+
+.botoncv:hover .fondo_botoncv{
+    visibility: hidden;
+}
+
+.botoncv:hover .boton_circulo2{
+    visibility: visible;
+}
+/*FIN QUIEN SOY*/
+
+
+
+/*INICIO PORTFOLIO*/
+
+.contenido_portfolio{
+    width: 90%;
+    /*height: 100%;*/
+    margin: auto;
+    padding-top: 25%;
+    /*background: #bbb;*/
+    
+}
+.portfolio_circulos{
+    /*padding-top: 10%;*/
+    margin-bottom: 10%;
+}
+.circulo{
+    border-radius: 100%;
+    height: 6.9em;
+    width:6.9em;
+    background: #444;
+    margin-right:7.31%;
+    text-align: center;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    display: inline-block;
+    
+    font-weight: 300;
+    font-size: 1.5em;
+    color:white;
+    line-height: 6.9em;
+    
+
+}
+.circulo:last-child{
+    margin-right: 0;
+}
+
+.circulo:hover{
+    font-weight: 700;
+    background:var(--fucsia);
+    opacity: 0.5;
+}
+
+.rectangulo{
+    width: 7.5em;
+    height: 2em;
+    background: #444;
+    margin-right: 5.1%;
+    display: inline-block;
+    font-size: 1.5em;
+    margin-bottom: 4%;
+}
+.rectangulo:nth-child(4n+4){
+    margin-right: 0;
+}
+
+/*FIN PORTFOLIO*/
+
+
+
+
+/*INICIO SERVICIOS*/
+.contenido_servicios{
+    width: 100%;
+    height: 100%;
+    margin:auto;
+    padding-top: 20%;
+}
+
+.trabajo{
+    width: 20%;
+    margin-right:6.1%;
+    margin-left: 0;
+    display: inline-block;
+    content: center;
+    text-align: center;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+
+.trabajo:last-child{
+    margin-right: 0;
+}
+
+.img_servicios{
+    width: 70%;
+}
+
+.trabajo h3{
+    font-weight: 400;
+    font-size: 1em;
+    color: var(--naranja);
+    margin: 3% 0;
+}
+
+.trabajo ul{
+    margin: 0;
+    padding: 0;
+}
+
+.trabajo ul li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: gray;
+}
+
+.software{
+    color:var(--naranja);
+    font-size: 1.6em;
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+    width: 80%;
+    margin-top: 10%;
+}
+.soft_graficos1, .soft_graficos2{
+    float: left;
+    margin-top:2%; 
+    display: inline-block;
+
+}
+.soft_graficos1{
+    margin-top: 5%;
+}
+.software img{
+    width: 10%;
+    margin-right:1%;
+}
+
+
+/*FIN SERVICIOS*/
+
+/*INICIO CONTACTO*/
+.contenido_contacto{
+    width: 100%;
+    height: 50%;
+    margin:auto;
+    padding-top: 20%;
+}
+#contacto{
+    color:var(--naranja);
+    font-weight: 400;
+}
+
+#section_formulario
+{
+    width: 50%;
+    height: 15%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    border:0.1em;
+    color: gray;
+}
+
+
+.campos
+{
+    border: #FFF;
+    background-color: #dddddf;
+    color: gray;
+    width: 30%;
+    font-size: 1.4em;
+    margin-bottom: 1%;
+    border-radius: 0.8em;
+    padding-left: ;
+}
+
+#pais{
+    font-size: 1em;
+    padding: 0.3em 0;
+    font-weight: 300;
+    outline: none;
+}
+
+#comentarios
+{
+    width: 30%;
+    height: 5em;
+    resize: none;
+    border-radius: 0.8em;
+}
+
+/* snippet para cambiar la tipografia al placeholder*/
+#comentarios::-moz-placeholder {
+ font-family: 'Roboto', sans-serif;  
+}
+#comentarios::-webkit-input-placeholder { 
+ font-family: 'Roboto', sans-serif;  
+}
+#comentarios::-ms-input-placeholder { 
+    font-family: 'Roboto', sans-serif;  
+}
+#comentarios::-moz-placeholder {
+    font-family: 'Roboto', sans-serif;  
+}
+
+
+input:focus {
+    border: 2px solid var(--fucsia);
+    border-radius: 0.8em;
+    outline: none;
+}
+
+.boton1,.boton2
+{
+    /*width: 12%;*/
+    height: 1.5em;
+    font-size: 1em;
+    background-color: var(--naranja);
+    color: white;
+    border: 0;
+    border-radius: 2em;
+    
+}
+.boton1{
+    margin-right: 5%;
+    width: 10%;
+}
+
+.boton2{
+    width: 16%;
+}
+/*FIN CONTACTO*/
