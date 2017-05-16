@@ -608,9 +608,9 @@ a.cv{
 /*INICIO CONTACTO*/
 .contenido_contacto{
     width: 100%;
-    height: 50%;
+    height: 100%;
     margin:auto;
-    padding-top: 20%;
+   padding-top: 20%;
 }
 #contacto{
     color:var(--naranja);
