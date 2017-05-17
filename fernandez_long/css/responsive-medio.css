@@ -2,19 +2,19 @@
 
 
 .frase{
-	margin-top: 45%;
+	margin-top: 25%;
     background: red;
 }
 
 .nav_home{
-	margin-top: 10%;
+	margin-top: -5%;
 
 }
 
 .logo_chico{
     position: absolute;
     width: 20%;
-    margin: -15% -10%; 
+    margin: -5% -10%; 
     
 }
 
@@ -23,7 +23,7 @@
     -webkit-transition: all 0.5s;
     moz-webkit-transition:all 0.5s;
     o-webkit-transition:all 0.5s;
-    margin:-15% -4%;
+    margin:-10% -4%;
 }
 
 
@@ -40,6 +40,9 @@
 
 
 /*QUIEN SOY*/
+.contenido_qs{
+   padding-bottom: 60%;
+}
 .foto_qs{
 	width: 38%;
 }
@@ -49,7 +52,6 @@
     float: right;
     width: 50%;
     font-size: 1.25em;
-    /*padding-right: 6%; */
 }
 .botoncontactame{
     margin-top:28%;
@@ -64,5 +66,79 @@
 
 
 
-
 /*FIN QUIEN SOY*/
+
+
+
+
+/*INICIO PORTFOLIO*/
+
+.portfolio_circulos{
+    margin-bottom: 5%;
+}
+.rectangulo{
+    margin-bottom: 3%;
+}
+.adentro_portfolio{
+    margin-top: 0%;
+    padding-top: 20%;
+
+}
+
+
+
+
+
+/*FIN PORTFOLIO*/
+
+
+
+
+
+/*INICIO CONTACTO*/
+.contenido_contacto {
+
+    padding-top: 30%;
+}
+.campos{
+    width: 50%;
+}
+#pais{
+    width: 52%;
+}
+#comentarios{
+    outline: none;
+    width: 49%;
+    padding: 1%;
+}
+.boton1{
+    margin-right: 9.5%;
+}
+
+@media screen and (max-width:960px){
+    .contenido_qs{
+        padding-top: 10%;
+    }
+    .botoncontactame{
+        margin-top: 32%;
+    }
+    .botoncv{
+        margin-top: 35%;
+    }
+
+
+
+    .circulo{
+        margin-right: 5%;
+    }
+    .circulo:last-child{
+    margin-right: 0;
+    }
+    .rectangulo{
+        width: 6.9em;
+        margin-right: 5%;
+    }
+    .rectangulo:nth-child(4n+4){
+        margin-right: 0;
+    }
+}

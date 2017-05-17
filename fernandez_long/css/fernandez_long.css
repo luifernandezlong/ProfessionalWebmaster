@@ -217,9 +217,18 @@ h1{
     position: absolute;
     width: 20%;
     margin: -12% -10%; 
+    animation: scale 0.95s infinite ease-out;
+    transform-origin: center;
     
-    
+
 }
+    
+@keyframes scale{
+    0%{transform: scale(1);}
+    50%{transform: scale(.95);}
+    100%{transform: scale(1);}
+} 
+  
 
 .nav_home{
     margin: 0 auto;
@@ -267,7 +276,7 @@ h1{
 .frase{
     color: white;
     font-weight: 400;
-    margin-top:40%;
+    margin-top:50%;
     margin-bottom: 10%;
     visibility: hidden;
 }
@@ -294,6 +303,7 @@ h1{
     moz-webkit-transition:all 0.5s;
     o-webkit-transition:all 0.5s;
     margin:-12% -4%;
+    animation-play-state: paused;
 }
 
 .fondo_inicio:hover .frase{
@@ -476,15 +486,20 @@ a.cv{
 /*INICIO PORTFOLIO*/
 
 .contenido_portfolio{
-    width: 90%;
-    /*height: 100%;*/
-    margin: auto;
-    padding-top: 25%;
-    /*background: #bbb;*/
-    
+    width:100%;
+    height: 100%;
+    background: var(--fucsia);
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.50);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.50);
+    box-shadow:0px 0px 15px 3px rgba(0,0,0,0.50);    
+}
+.adentro_portfolio{
+   padding-top: 25%;
+   max-width: 90%;
+   margin: auto;
 }
 .portfolio_circulos{
-    /*padding-top: 10%;*/
+    
     margin-bottom: 10%;
 }
 .circulo{
@@ -536,7 +551,7 @@ a.cv{
 /*INICIO SERVICIOS*/
 .contenido_servicios{
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     margin:auto;
     padding-top: 20%;
 }
@@ -551,6 +566,7 @@ a.cv{
     box-sizing:border-box;
     -moz-box-sizing:border-box;
 }
+
 
 .trabajo:last-child{
     margin-right: 0;
@@ -578,7 +594,6 @@ a.cv{
     list-style-type: none;
     color: gray;
 }
-
 .software{
     color:var(--naranja);
     font-size: 1.6em;
@@ -608,13 +623,15 @@ a.cv{
 /*INICIO CONTACTO*/
 .contenido_contacto{
     width: 100%;
-    height: 100%;
-    margin:auto;
-   padding-top: 20%;
+    
+    margin: 0 auto;
+    /*padding-top: 10%;*/
 }
 #contacto{
     color:var(--naranja);
     font-weight: 400;
+    margin: 0 auto;
+    /*padding-top: 10%;*/
 }
 
 #section_formulario
@@ -630,55 +647,62 @@ a.cv{
 
 .campos
 {
-    border: #FFF;
+    border: 0.05em solid #dddddf;
     background-color: #dddddf;
     color: gray;
-    width: 30%;
-    font-size: 1.4em;
+    width: 24%;
+    font-size: 1em;
     margin-bottom: 1%;
     border-radius: 0.8em;
-    padding-left: ;
+    padding: 0.5% 1% ;
 }
 
 #pais{
     font-size: 1em;
-    padding: 0.3em 0;
+    width: 26%;
+    padding: 0.3em 1%;
     font-weight: 300;
     outline: none;
+    border-radius: 2em;
+
 }
 
 #comentarios
 {
-    width: 30%;
+    width: 25%;
     height: 5em;
     resize: none;
+    border: 0.07em solid #dddddf;
     border-radius: 0.8em;
+    outline: none;
+    font-size: 1em;
+    padding: 0.5%;
+    color: gray;
 }
 
 /* snippet para cambiar la tipografia al placeholder*/
 #comentarios::-moz-placeholder {
- font-family: 'Roboto', sans-serif;  
+ font-family: 'Roboto' 
 }
 #comentarios::-webkit-input-placeholder { 
- font-family: 'Roboto', sans-serif;  
+ font-family: 'Roboto' 
 }
 #comentarios::-ms-input-placeholder { 
-    font-family: 'Roboto', sans-serif;  
-}
-#comentarios::-moz-placeholder {
-    font-family: 'Roboto', sans-serif;  
+    font-family: 'Roboto'
 }
 
 
 input:focus {
-    border: 2px solid var(--fucsia);
+    border: 0.07em solid var(--fucsia);
     border-radius: 0.8em;
     outline: none;
+}
+#comentarios:focus{
+    border: 0.05em solid var(--fucsia);
 }
 
 .boton1,.boton2
 {
-    /*width: 12%;*/
     height: 1.5em;
     font-size: 1em;
     background-color: var(--naranja);
@@ -688,11 +712,20 @@ input:focus {
     
 }
 .boton1{
-    margin-right: 5%;
-    width: 10%;
+    margin-right: 6%;
+    width: 4.5em;
 }
 
 .boton2{
-    width: 16%;
+    width: 7.5em;
+}
+
+
+footer{
+    background: var(--naranja);
+    color: white;
+    width: 100%;
 }
 /*FIN CONTACTO*/
+
+

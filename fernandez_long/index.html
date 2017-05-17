@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/fernandez_long.css">
 	<link rel="stylesheet" href="css/responsive-chico.css" media="handheld, screen and (min-width:230px) and (max-width:768px)"/> 
-	<link rel="stylesheet" href="css/responsive-medio.css" media="handheld, screen and (min-width:769px) and (max-width:1280px)"/> 
+	<link rel="stylesheet" href="css/responsive-medio.css" media="handheld, screen and (min-width:769px) and (max-width:1360px)"/> 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>
 
@@ -23,13 +23,14 @@
 		$('.active').click(function(e) {	
 			$('.active').removeClass('click');
 			$(this).addClass('click');
+
 		});
 
 
 		$(".fondo_inicio").hover(function(){
 			$(".fotofondo").css("filter", "blur(0px)").css("-webkit-filter", "blur(0px)");
 		}, function(){
-			$(".fotofondo").css("-webkit-filter", "blur(13px)").css("margin","-1%");
+			$(".fotofondo").css("-webkit-filter", "blur(13px)").css("margin","-5px -15px -10px -15px").css("transform","scale(1.01)");
 		});
 	});
 
@@ -49,7 +50,7 @@
 
 				<a href="#home_responsive"><nav class="nav_home">
 					<ul>
-						<li><a href="#quien_soy" title="" class="nav_izquierda">QUIEN SOY<hr class="quien_soy"></a></li><li><a href="#portfolio" title="" class="nav_centro">PORTFOLIO<hr class="portfolio"></a></li><li><a href="#servicios" title="" class="nav_centro">SERVICIOS<hr class="servicios2"></a></li><li><a href="#contacto" title="" class="nav_derecha">CONTACTO<hr class="contacto"></a></li>
+						<li><a href="#quien_soy" class="foc_qs nav_izquierda">QUIEN SOY<hr class="quien_soy"></a></li><li><a href="#portfolio" title="" class="nav_centro">PORTFOLIO<hr class="portfolio"></a></li><li><a href="#servicios" title="" class="nav_centro">SERVICIOS<hr class="servicios2"></a></li><li><a href="#contacto" title="" class="nav_derecha">CONTACTO<hr class="contacto"></a></li>
 					</ul>
 				</nav></a>
 			</div>
@@ -63,8 +64,7 @@
 		<a href="icon-menu" title=""></a>
 		<nav class="nav_sitio">
 			<ul>
-				<li class= "nav_focus">
-					<a href="#home" title="home" class="nav_izquierda active">INICIO<hr class="inicio"></a></li><li class= "nav_focus"><a href="#quien_soy" title="quien soy" class="nav_izquierda active">QUIEN SOY<hr class="quien_soy"></a></li><li class= "nav_focus"><a href="#portfolio" title="portfolio" class="nav_centro active">PORTFOLIO<hr class="portfolio" ></a></li><li class= "nav_focus"><a href="#servicios" title="servicios" class="nav_derecha nav_servicios active">SERVICIOS<hr class="servicios"></a></li><li class= "nav_focus"><a href="#contacto" title="contacto" class="nav_derecha active">CONTACTO<hr class="contacto"></a></li>
+				<li class= "nav_focus"><a href="#home" title="home" class="nav_izquierda active">INICIO<hr class="inicio"></a></li><li class= "nav_focus"><a href="#quien_soy" title="quien soy" class="foc_qs nav_izquierda active">QUIEN SOY<hr class="quien_soy"></a></li><li class= "nav_focus"><a href="#portfolio" title="portfolio" class="nav_centro active">PORTFOLIO<hr class="portfolio" ></a></li><li class= "nav_focus"><a href="#servicios" title="servicios" class="nav_derecha nav_servicios active">SERVICIOS<hr class="servicios"></a></li><li class= "nav_focus"><a href="#contacto" title="contacto" class="nav_derecha active">CONTACTO<hr class="contacto"></a></li>
 				</ul>
 			</nav>
 		</div>	
@@ -73,9 +73,8 @@
 
 
 
-
+	<a name="quien_soy"></a>
 		<div class="holder">
-			<a name="quien_soy"></a>
 			<section class="contenido_qs">
 				<div class="descripcionpropia">
 					<img src="img/quien_soy/quien_soy.png" alt="Quien soy" class="foto_qs">
@@ -88,7 +87,7 @@
 
 
 					<div class="botoncontactame">
-						<a href="#" title="" class="contactame">¡CONTACTAME!</a>
+						<a href="#contacto" title="" class="contactame">¡CONTACTAME!</a>
 						<div class="fondocontactame">
 							<div class="boton_circulo"></div>
 						</div>	
@@ -112,10 +111,13 @@
 
 
 
-
+	<a name="portfolio"></a>
+	<section class="contenido_portfolio">
 		<div class="holder">
-			<a name="portfolio"></a>
-				<section class="contenido_portfolio">
+			<div class="adentro_portfolio">
+				
+			
+				
 					<div class="portfolio_circulos">
 						<div class="circulo">BRANDING</div>
 						<div class="circulo">EDITORIAL</div>
@@ -138,18 +140,17 @@
 
 					</div>
 
-				</section>
-
-			
+				
+			</div>	
 		</div>
+</section>
 
-
-
+	<a name="servicios"></a>
 		<div class="holder">
-			<a name="servicios"></a>
+			
 				<section class="contenido_servicios">
 					<div class="trabajos"  data-aos="fade-up">
-						<div class="trabajo" >
+						<div class="trabajo ">
 							<img src="img/servicios/branding.png" class="img_servicios">
 							<h3>BRANDING</h3>
 							<ul>
@@ -216,9 +217,9 @@
 		
 	</div>
 
-
-	<div class="contenido_contacto">
-		<a name="contacto"></a>
+	<a name="contacto"></a>
+		<div class="contenido_contacto">
+		
 			<center>
 				<h2 id="contacto">Contacto</h2>
 				<form action="mailto:luisina.fl@hotmail.com?" method="post" name="formulario" id="section_formulario">
@@ -230,6 +231,7 @@
 						<label for="email">Mail:<br></label>
 						<input name="email" type="email" required class="campos" id="email">
 					</p>
+
 					<p>
 						<label for="Pais">País:<br></label>
 						<select name="Pais" class="campos" id="pais">
@@ -251,14 +253,18 @@
 						<label for="comentarios">Comentarios:<br></label></td>
 						<textarea name="comentarios" id="comentarios" placeholder="Escribime tu comentario..."></textarea></td>
 					</p>
-					<input name="submit" type="submit" class="boton1" id="submit" value="Enviar">
-					<input name="reset" type="reset" class="boton2" id="reset" value="Restablecer">
+					<input type="submit" value="Enviar" class="boton1" />
+					<input type="submit" value="Restablecer" class="boton2" />
 
 				</form>
 			</center>	
-		
-	</div>
+		</div>
 
+
+	<footer>
+		hola
+		
+	</footer>
 
 	<script src="AOS/aos.js"></script>
 	<script>
