@@ -20,6 +20,17 @@ TRANSICION BOTON CONTACTAME*/
     font-style: normal;
 
 }
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?u5bexp');
+  src:  url('fonts/icomoon.eot?u5bexp#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?u5bexp') format('truetype'),
+    url('fonts/icomoon.woff?u5bexp') format('woff'),
+    url('fonts/icomoon.svg?u5bexp#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 html,body{
     width: 100%;
@@ -506,13 +517,14 @@ a.cv{
     border-radius: 100%;
     height: 6.9em;
     width:6.9em;
-    background: #444;
+    background:url(../img/portfolio/lact.png) no-repeat center #444;
+    background-size:cover;
+
     margin-right:7.31%;
     text-align: center;
     box-sizing:border-box;
     -moz-box-sizing:border-box;
     display: inline-block;
-    
     font-weight: 300;
     font-size: 1.5em;
     color:white;
@@ -520,6 +532,7 @@ a.cv{
     
 
 }
+
 .circulo:last-child{
     margin-right: 0;
 }
@@ -527,7 +540,7 @@ a.cv{
 .circulo:hover{
     font-weight: 700;
     background:var(--fucsia);
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .rectangulo{
@@ -538,6 +551,9 @@ a.cv{
     display: inline-block;
     font-size: 1.5em;
     margin-bottom: 4%;
+    background:url(../img/portfolio/lact2.png) no-repeat center #444;
+     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 .rectangulo:nth-child(4n+4){
     margin-right: 0;
@@ -624,7 +640,7 @@ a.cv{
 .contenido_contacto{
     width: 100%;
     
-    margin: 0 auto;
+    margin: 0 auto 5%;
     /*padding-top: 10%;*/
 }
 #contacto{
@@ -725,6 +741,56 @@ footer{
     background: var(--naranja);
     color: white;
     width: 100%;
+    text-align: center;
+    padding: 1% 0;
+    margin: auto;
+}
+
+.botones_footer{
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+    padding:1% 0 5%;
+    text-align: center;
+    color: white;
+}
+.sp_foot{
+    font-weight: 400;
+    font-size: 1.2em;
+}
+.boton_footer{
+    
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    margin-right:5%;
+
+
+}
+
+.icon-celular:before {
+  font-family: 'icomoon';
+  content: "\e959";
+}
+.icon-behance:before {
+     font-family: 'icomoon';
+  content: "\eaa8";
+}
+.icon-github:before {
+  font-family:'icomoon';
+  content: "\eab0";
+}
+.icon-linkedin:before {
+font-family: 'icomoon';
+   
+  content: "\eaca";
+}
+
+
+.copyright{
+    font-weight: 400;
+    font-size: 0.8em;
+
 }
 /*FIN CONTACTO*/
 

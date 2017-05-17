@@ -40,9 +40,7 @@
 
 
 /*QUIEN SOY*/
-.contenido_qs{
-   padding-bottom: 60%;
-}
+
 .foto_qs{
 	width: 38%;
 }
@@ -62,7 +60,9 @@
 	margin-top: 31%;
 	margin-left: 17.5%;
 }
-
+.fondocontactame{
+    margin-top: -5%;
+}
 
 
 
@@ -80,8 +80,8 @@
     margin-bottom: 3%;
 }
 .adentro_portfolio{
-    margin-top: 0%;
-    padding-top: 20%;
+    padding-top: 18%;
+    margin: 5% auto;
 
 }
 
@@ -98,7 +98,7 @@
 /*INICIO CONTACTO*/
 .contenido_contacto {
 
-    padding-top: 30%;
+    padding-top: 20%;
 }
 .campos{
     width: 50%;
@@ -121,9 +121,12 @@
     }
     .botoncontactame{
         margin-top: 32%;
+         margin-left: 24%;
     }
     .botoncv{
+        padding-top: 1%;
         margin-top: 35%;
+         margin-left: 25%;
     }
 
 
