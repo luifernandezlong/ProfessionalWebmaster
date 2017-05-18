@@ -53,6 +53,7 @@ body{
     max-width: 960px;
     height: 100%;
     margin: 0 auto;
+    background: red;
 }
 
 
@@ -74,36 +75,57 @@ body{
     box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.50);
     
 }
-.nav_sitio{
-    margin: 0 auto;
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color:var(--fucsia);
+    font-size: 2.2em;
+    text-align: left;
     padding: 0;
+    margin: 2% 0 3%;
+}
+
+.nav{
     max-width: 960px;
+    margin: auto;
+
+    /*display: flex;*/
+}
+.nav_sitio{
+    max-width: 50%;
+    float: right;
+    padding: 0;
+    /*display: flex;*/
 }
 
 
 .nav_sitio ul{
     list-style: none;
-    margin: 0;
+    margin: 2% 0;
     padding: 0;
     display: flex;
 }
 
 .nav_sitio ul li{
-    margin: 0;
+    margin: 0 5% 0 0;
     display: inline-block;
+    
     flex:1;
     
 }
+.nav_sitio ul li:last-child{
+    margin: 0;
+}
+
 
 .nav_sitio ul li a{
-    margin: 0;
     color:gray;
     text-decoration: none;
-    padding: 0.2em 0em 0em 0em;
-    display: block;
-    font-size: 1.4em;
-    /*font-weight: 300;*/
+    text-align: right;
+    display: inline-block;
+    font-size: 1em;
 }
+
 
 .nav_derecha{
     text-align: right;
@@ -162,15 +184,6 @@ hr.servicios2{
 }
 
 
-h1{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    color:var(--fucsia);
-    font-size: 3.51em;
-    text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
 
 
 
