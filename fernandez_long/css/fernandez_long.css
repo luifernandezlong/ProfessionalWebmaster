@@ -53,7 +53,7 @@ body{
     max-width: 960px;
     height: 100%;
     margin: 0 auto;
-    background: red;
+    /*background: red;*/
 }
 
 
@@ -83,16 +83,16 @@ h1{
     text-align: left;
     padding: 0;
     margin: 2% 0 3%;
+    width: 45%;
 }
 
 .nav{
     max-width: 960px;
     margin: auto;
-
-    /*display: flex;*/
+    display: flex;
 }
 .nav_sitio{
-    max-width: 50%;
+    width: 55%;
     float: right;
     padding: 0;
     /*display: flex;*/
@@ -101,31 +101,28 @@ h1{
 
 .nav_sitio ul{
     list-style: none;
-    margin: 2% 0;
+    margin: 4% 0;
     padding: 0;
     display: flex;
 }
 
 .nav_sitio ul li{
-    margin: 0 5% 0 0;
+    margin:0;
     display: inline-block;
     
     flex:1;
     
 }
-.nav_sitio ul li:last-child{
-    margin: 0;
-}
 
 
 .nav_sitio ul li a{
     color:gray;
+    float: right;
     text-decoration: none;
-    text-align: right;
     display: inline-block;
+
     font-size: 1em;
 }
-
 
 .nav_derecha{
     text-align: right;
@@ -151,29 +148,6 @@ hr{
     margin: 0;
     padding-top: 0.5%;
 }
-hr.inicio{
-    
-    width: 33%;
-}
-hr.quien_soy{
-    width: 58%;
-}
-hr.portfolio{
-    width: 60%;
-    margin: 0 auto;
-} 
-hr.servicios{
-    width: 56.5%;
-    margin: 0 0 0 auto;
-} 
-hr.contacto{
-    width: 58%;
-    margin: 0 0 0 auto;
-} 
-hr.servicios2{
-    width: 56.5%;
-    margin: auto;
-} 
 
 .nav_sitio ul li a:hover {   
     color:var(--fucsia);
@@ -182,9 +156,6 @@ hr.servicios2{
 .nav_sitio ul li a:hover hr{
    border-bottom: thin solid var(--fucsia);
 }
-
-
-
 
 
 .click{
@@ -240,7 +211,7 @@ hr.servicios2{
 .logo_chico{
     position: absolute;
     width: 20%;
-    margin: -12% -10%; 
+    margin:15% -10%; 
     animation: scale 0.95s infinite ease-out;
     transform-origin: center;
     
@@ -255,10 +226,9 @@ hr.servicios2{
   
 
 .nav_home{
-    margin: 0 auto;
+    margin:3% auto 0;
     font-size: 1.4em;
     padding: 0;
-    font-weight: 300;
     width: 80%;
     visibility: hidden;
 }
@@ -297,11 +267,35 @@ hr.servicios2{
     visibility: visible;
 }
 
+hr.inicio{
+    
+    width: 33%;
+}
+hr.quien_soy{
+    width: 58%;
+}
+hr.portfolio{
+    width: 60%;
+    margin: 0 auto;
+} 
+hr.servicios{
+    width: 56.5%;
+    margin: 0 0 0 auto;
+} 
+hr.contacto{
+    width: 58%;
+    margin: 0 0 0 auto;
+} 
+hr.servicios2{
+    width: 56.5%;
+    margin: auto;
+} 
+
 .frase{
     color: white;
     font-weight: 400;
-    margin-top:50%;
-    margin-bottom: 10%;
+    padding-top: 50%;
+    margin-bottom: 7%;
     visibility: hidden;
 }
 .cita{
@@ -326,7 +320,7 @@ hr.servicios2{
     -webkit-transition: all 0.5s;
     moz-webkit-transition:all 0.5s;
     o-webkit-transition:all 0.5s;
-    margin:-12% -4%;
+    margin:15% -4%;
     animation-play-state: paused;
 }
 
@@ -348,38 +342,38 @@ hr.servicios2{
 /*INICIO QUIEN SOY*/
 
 .contenido_qs{
-    width:65%;
-    /*height: 80%;*/
-    padding-top: 15%;
+   
     margin: auto;
 }
 
 .descripcionpropia{
-    display: block;
-    height: 50%;
+    /*display: block;*/
+    width: 50%;
+    float: left;
     padding-top: 12%;
+    background: lightblue;
 }
 
 .foto_qs{
  /*position: relative;*/
  /*padding-top: 25%;*/
- width: 40%;
+ width: 15%;
  float: left;
- /*padding-right: 6%;*/
+ padding-right: 6%;
 }
 
 
 .texto_qs{
     line-height: 1.2em;
     text-align: left;
-    width: 53%;
-    padding-top: 5%;
-    float: right;
-    font-family: 'Roboto' sans-serif;
+    /*width: 35%;*/
+
+    padding-left: 5%;
+   font-family: 'Roboto' sans-serif;
     font-weight: 300;
     font-size: 1.4em;
     color:gray;
-    
+    z-index: 0;
 }
 
 .bolditalic{
@@ -502,6 +496,52 @@ a.cv{
 
 .botoncv:hover .boton_circulo2{
     visibility: visible;
+}
+
+
+
+.cuerpo{
+    width: 100%;
+    float: right;
+    margin-right: 1%;
+    margin-top: -34%;
+   
+    /*background:url(../img/caricatura.png) no-repeat center #444;*/
+
+}
+
+.brazo{
+   width: 12%;
+    margin-top: 0;
+    float: right;
+
+}              
+.dibujo{
+    /*background: gray;*/
+    float: right;
+    width: 35%;
+    height: 100%;
+    margin-top: 15%;
+}
+.dibujo:hover .brazo{
+    -webkit-animation:rotate 0.5s infinite ease;
+    -moz-animation:rotate 0.5s infinite ease;
+    animation:rotate 0.5s infinite ease;
+   /* -ms-transform: translate(0.1em, 0);
+    -webkit-transform: translate(0.1em, 0);  
+    transform: translate(0.1em, 0);*/
+    
+}
+@-moz-keyframes rotate {
+    100% { -moz-transform: rotate(16deg); } 
+}
+@-webkit-keyframes rotate { 
+    100% { -webkit-transform: rotate(16deg); } 
+}
+@keyframes rotate { 
+    100% { -webkit-transform: rotate(16deg);
+     transform:rotate(16deg); } 
+ }
 }
 /*FIN QUIEN SOY*/
 
