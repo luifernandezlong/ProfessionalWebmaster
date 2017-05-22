@@ -22,10 +22,8 @@
 
 		$('.active').click(function(e) {	
 			$('.active').removeClass('click');
-			$(this).addClass('click');
-
+				$("."+this.className.split(/\s+/)[0]).addClass('click');
 		});
-
 
 		// $(".fondo_inicio").hover(function(){
 		// 	$(".fotofondo").css("filter", "blur(0px)").css("-webkit-filter", "blur(0px)");
@@ -51,7 +49,7 @@
 
 					<a href="#home_responsive"></a><nav class="nav_home">
 						<ul>
-							<li><a href="#quien_soy" class="foc_qs nav_izquierda">QUIEN SOY<hr class="quien_soy"></a></li><li><a href="#portfolio" title="" class="nav_centro">PORTFOLIO<hr class="portfolio"></a></li><li><a href="#servicios" title="" class="nav_centro">SERVICIOS<hr class="servicios2"></a></li><li><a href="#contacto" title="" class="nav_derecha">CONTACTO<hr class="contacto"></a></li>
+							<li><a href="#quien_soy" class="foc_qs nav_izquierda active">QUIEN SOY<hr class="quien_soy"></a></li><li><a href="#portfolio" title="" class=" foc_port nav_centro active">PORTFOLIO<hr class="portfolio"></a></li><li><a href="#servicios" title="" class="foc_s nav_centro active">SERVICIOS<hr class="servicios2"></a></li><li><a href="#contacto" title="" class="foc_con nav_derecha active">CONTACTO<hr class="contacto"></a></li>
 						</ul>
 					</nav>
 				</div>
@@ -72,7 +70,7 @@
 			<nav class="nav_sitio">
 
 				<ul>
-					<li class= "nav_focus"><a href="#home" title="home" class="active">INICIO<hr></a></li><li class= "nav_focus"><a href="#quien_soy" title="quien soy" class="foc_qs active">QUIEN SOY<hr></a></li><li class= "nav_focus"><a href="#portfolio" title="portfolio" class=" active">PORTFOLIO<hr></a></li><li class= "nav_focus"><a href="#servicios" title="servicios" class=" nav_servicios active">SERVICIOS<hr></a></li><li class= "nav_focus"><a href="#contacto" title="contacto" class=" active">CONTACTO<hr></a></li>
+					<li class= "nav_focus"><a href="#home" title="home" class="nav_izquierda active">INICIO<hr></a></li><li class= "nav_focus"><a href="#quien_soy" title="quien soy" class="foc_qs nav_izquierda active">QUIEN SOY<hr></a></li><li class= "nav_focus"><a href="#portfolio" title="portfolio" class="foc_port nav_centro active">PORTFOLIO<hr></a></li><li class= "nav_focus"><a href="#servicios" title="servicios" class="foc_s nav_derecha nav_servicios active">SERVICIOS<hr></a></li><li class= "nav_focus"><a href="#contacto" title="contacto" class="foc_con nav_derecha active">CONTACTO<hr></a></li>
 				</ul>
 			</nav>
 		</div>
