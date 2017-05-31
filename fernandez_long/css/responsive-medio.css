@@ -1,20 +1,23 @@
+.holder, .nav{
+    max-width: 760px;
+}
+
 /*INICIO*/
 
 
 .frase{
-	margin-top: 25%;
+	margin-top: -15%;
     /*background: red;*/
 }
 
 .nav_home{
-	margin-top: -5%;
-
+	margin-top:5%;
 }
 
 .logo_chico{
     position: absolute;
     width: 20%;
-    margin: -5% -10%; 
+    margin:30% -10%; 
     
 }
 
@@ -23,7 +26,7 @@
     -webkit-transition: all 0.5s;
     moz-webkit-transition:all 0.5s;
     o-webkit-transition:all 0.5s;
-    margin:-10% -4%;
+    margin:30% -4%;
 }
 
 
@@ -40,6 +43,9 @@
 
 
 /*QUIEN SOY*/
+.contenido_qs{
+    margin-top: 15%;
+}
 
 .foto_qs{
 	width: 38%;

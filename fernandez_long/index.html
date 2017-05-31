@@ -10,9 +10,10 @@
 	<link rel="stylesheet" href="AOS/aos.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/fernandez_long.css">
-	<!-- <link rel="stylesheet" href="css/responsive-chico.css" media="handheld, screen and (min-width:230px) and (max-width:768px)"/>  -->
-	<!-- <link rel="stylesheet" href="css/responsive-medio.css" media="handheld, screen and (min-width:769px) and (max-width:1360px)"/>  -->
+	<link rel="stylesheet" href="css/responsive-chico.css" media="handheld, screen and (min-width:230px) and (max-width:768px)"/>  
+	<link rel="stylesheet" href="css/responsive-medio.css" media="handheld, screen and (min-width:769px) and (max-width:1360px)"/> 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/portf.js" type="text/javascript"></script>
 	<script>
 
 
@@ -31,7 +32,15 @@
 		// 	$(".fotofondo").css("-webkit-filter", "blur(13px)").css("margin","-5px -15px -10px -15px").css("transform","scale(1.01)");
 		// });
 	});
+		var figure = $(".video").hover( hoverVideo, hideVideo );
 
+		function hoverVideo(e) {  
+		    $('video', this).get(0).play(); 
+		}
+
+		function hideVideo(e) {
+		    $('video', this).get(0).pause(); 
+		}
 	</script>
 </head>
 
@@ -107,13 +116,35 @@
 						</div>
 					</div>	
 				</div>
-				<div class="dibujo">
+				<div>
+					<img src="img/quien_soy/cuerpocompleto-07.png" class="dibujoentero" alt="">
+				</div>
+		<!-- 	<div class="caricatura">
+				
+			
+			<video width="30%">
+			  <source src="img/quien_soy/gif.mp4" type="video/mp4">
+			 
+			</video>
+			</div>	
+ -->
+	<!-- 		<div id="videosList">           
+				<div class="video">
+				    <video class="thevideo" loop >
+				      <source src="img/quien_soy/gif.mp4" type="video/mp4">
+				      <!-- <source src="https://giant.gfycat.com/VerifiableTerrificHind.webm" type="video/webm"> 
+				    </video>
+				  </div>
+			</div>
+					 -->	<!-- <div class="dibujo">
+					<img src="img/caricatura--03.png" class="cuerpo" alt="">
+				<img src="img/caricatura_antebrazo-06.png" alt="" class="antebrazo">
 
 				<img src="img/caricatura_brazo-04.png" alt="" class="brazo">
 				<img src="img/caricatura_mano-05.png" class="mano">	
-				<img src="img/caricatura--03.png" class="cuerpo" alt="">
+				
 						
-				</div>		
+				</div>		 -->
 			</div>
 		</div>
 
@@ -126,10 +157,10 @@
 
 			<div class="adentro_portfolio">
 					<div class="portfolio_circulos">
-						<div class="circulo">BRANDING</div>
-						<div class="circulo">EDITORIAL</div>
-						<div class="circulo">WEB</div>
-						<div class="circulo">OTROS</div>
+						<div class="circulo serv1">BRANDING</div>
+						<div class="circulo serv2">EDITORIAL</div>
+						<div class="circulo serv3">WEB</div>
+						<div class="circulo serv4">OTROS</div>
 					</div>
 
 					<div class="portfolio_rectangulos">
