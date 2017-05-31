@@ -31,16 +31,62 @@
 		// }, function(){
 		// 	$(".fotofondo").css("-webkit-filter", "blur(13px)").css("margin","-5px -15px -10px -15px").css("transform","scale(1.01)");
 		// });
-	});
-		var figure = $(".video").hover( hoverVideo, hideVideo );
+	// });
+	// 	var figure = $(".video").hover( hoverVideo, hideVideo );
 
-		function hoverVideo(e) {  
-		    $('video', this).get(0).play(); 
-		}
+	// 	function hoverVideo(e) {  
+	// 	    $('video', this).get(0).play(); 
+	// 	}
 
-		function hideVideo(e) {
-		    $('video', this).get(0).pause(); 
-		}
+	// 	function hideVideo(e) {
+	// 	    $('video', this).get(0).pause(); 
+	// 	}
+
+		$(document).ready(function() {
+
+		  // get the action filter option item on page load
+
+		  // PORTFOLIO
+		  var $filterType = $('#filterOptions li.severe a').attr('class');
+		    
+		  // get and assign the ourHolder element to the
+		    // $holder varible for use later
+		  var $holder = $('ul.ourHolder');
+
+		  // clone all items within the pre-assigned $holder element
+		  var $data = $holder.clone();
+
+		  // attempt to call Quicksand when a filter option
+		    // item is clicked
+		    $('#filterOptions li a').click(function(e) {
+		        // reset the active class on all the buttons
+		        $('#filterOptions li').removeClass('severe');
+		        
+		        // assign the class of the clicked filter option
+		        // element to our $filterType variable
+		        var $filterType = $(this).attr('class');
+		        $(this).parent().addClass('severe');
+		        
+		        if ($filterType == 'all') {
+		            // assign all li items to the $filteredData var when
+		            // the 'All' filter option is clicked
+		            var $filteredData = $data.find('li');
+		        } 
+		        else {
+		            // find all li elements that have our required $filterType
+		            // values for the data-type element
+		            var $filteredData = $data.find('li[data-type=' + $filterType + ']');
+		        }
+		        
+		        // call quicksand and assign transition parameters
+		        $holder.quicksand($filteredData, {
+		            duration: 800,
+		            easing: 'easeInOutQuad'
+		        });
+		        return false;
+		    });
+	  });
+
 	</script>
 </head>
 
@@ -155,15 +201,66 @@
 		<a name="portfolio"></a>
 		<div class="holder">
 
-			<div class="adentro_portfolio">
+		<!-- 	<div class="adentro_portfolio">
 					<div class="portfolio_circulos">
+						<div class="circulo serv4">TODOS</div>
 						<div class="circulo serv1">BRANDING</div>
 						<div class="circulo serv2">EDITORIAL</div>
-						<div class="circulo serv3">WEB</div>
-						<div class="circulo serv4">OTROS</div>
-					</div>
-
-					<div class="portfolio_rectangulos">
+						<div class="circulo serv3">WEB Y OTROS</div>
+						
+					</div> -->
+			
+				<div class="adentro_portfolio">
+					<ul id="filterOptions">
+						<li class="circulo"><a href="#portfolio" class="severe serv4">TODOS</a></li>
+						<li class="circulo"><a href="#portfolio" class="branding serv1">BRANDING</a></li>
+						<li class="circulo"><a href="#portfolio" class="editorial serv2">EDITORIAL</a></li>
+						<li class="circulo"><a href="#portfolio" class="webotros serv3">WEB Y OTROS</a></li>
+					</ul>	
+				</div>
+						  
+			<div class="rectangulo">		  
+				<ul class="ourHolder">
+				    <li class="item" data-id="id-1" data-type="branding">
+				 	      <h3>Lactum</h3>
+				    </li>
+				    <li class="item" data-id="id-2" data-type="branding">
+				 	      <h3>Camino de los...</h3>
+				    </li>
+				    <li class="item" data-id="id-3" data-type="branding">
+				 	      <h3>Cañada</h3>
+				    </li>
+				    <li class="item" data-id="id-4" data-type="branding">
+				 	      <h3>Zenitram</h3>
+				    </li>
+				    <li class="item" data-id="id-5" data-type="editorial">
+				 	      <h3>Cañada</h3>
+				    </li>
+				    <li class="item" data-id="id-6" data-type="editorial">
+				 	      <h3>Polina Ivanova</h3>
+				    </li>
+					<li class="item" data-id="id-7" data-type="editorial">
+				     <h3>Grito!</h3>
+				    </li>
+				    <li class="item" data-id="id-8" data-type="editorial">
+					    <h3>Camino de los...</h3>
+				    </li>
+					<li class="item" data-id="id-9" data-type="webotros">
+					     <h3>TVP</h3>
+				    </li>
+				    <li class="item" data-id="id-10" data-type="webotros">
+					    <h3>TVP - video</h3>
+					</li>
+				    <li class="item" data-id="id-11" data-type="webotros">
+					    <h3>Afiches</h3>
+				    </li>
+				    <li class="item" data-id="id-12" data-type="webotros">
+					     <h3>Fotografías</h3>
+				    </li>
+					    
+			    </ul>
+			</div>
+					<!-- <div class="portfolio_rectangulos">
 						<div class="rectangulo"></div>
 						<div class="rectangulo"></div>
 						<div class="rectangulo"></div>
@@ -177,10 +274,8 @@
 						<div class="rectangulo"></div>
 						<div class="rectangulo"></div>
 
-					</div>
+					</div> -->
 
-				
-			</div>	
 		</div>
 </section>
 
