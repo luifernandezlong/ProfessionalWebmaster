@@ -11,7 +11,7 @@
 	// 	}
 
 	// 	function hideVideo(e) {
-	// 	    $('video', this).get(0).pause(); 
+	// 	    $('video', this).get(0).pause(); 	
 	// 	}
 
 		$(document).ready(function() {
