@@ -271,10 +271,10 @@ hr.inicio{
     
     width: 33%;
 }
-hr.quien_soy{
+hr.portfolio{
     width: 58%;
 }
-hr.portfolio{
+hr.quien_soy{
     width: 60%;
     margin: 0 auto;
 } 
@@ -606,6 +606,9 @@ video::-webkit-media-controls {
 
 /*INICIO PORTFOLIO*/
 
+
+
+
 .contenido_portfolio{
     width:100%;
     height: 100%;
@@ -616,7 +619,7 @@ video::-webkit-media-controls {
 }
 .adentro_portfolio{
    padding-top: 15%;
-   /*max-width: 90%;*/
+  
    margin: auto;
 }
 .circulo{
@@ -627,17 +630,18 @@ video::-webkit-media-controls {
     margin-right:7.31%;
     text-align: center;
     font-size: 1.5em;
-  /*  box-sizing:border-box;
-    -moz-box-sizing:border-box;*/
+ box-sizing:border-box;
+    -moz-box-sizing:border-box;
     display: inline-block;
     font-weight: 400;
     
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%);  
     filter: grayscale(100%);
 
 }
 li.circulo a{
     color:white;
+    text-decoration: none;
    
 }
 .serv1{
@@ -704,8 +708,8 @@ ul.ourHolder li.item {
     overflow: hidden;
 }
 .item{
-    background:url(../img/portfolio/lact2.png) no-repeat center;
-    background-size: cover;
+    /*background:url(../img/portfolio/lact2.png) no-repeat center;
+    background-size: cover;*/
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
     width: 7.5em;
@@ -717,7 +721,7 @@ ul.ourHolder li.item {
 .item h3 { 
     font-weight: 300;
     font-size: 0.8em; 
-    color: white;
+    color: red;
     line-height: 0.3em;
     /*line-height: 1em; */
     visibility: hidden;
