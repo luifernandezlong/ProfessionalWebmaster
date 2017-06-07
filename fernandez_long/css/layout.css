@@ -1,26 +1,37 @@
+.adentro_portfolio{
+    /*background: lightblue;*/
+
+    height: 30%;
+    width: 100%;
+}
+
+
 #filters {
 	list-style:none;
+  margin-left: -3%;
 }
 
 	#filters li {
 		float:left;
+
 	}
 	
 	#filters li span {
 		display: block;
 		text-decoration:none;
 		color:white;
+
 		cursor: pointer;
 	}
 	
 	#filters li span.active {
-		/*background: #e95a44;*/
 		color:white;
 		font-weight: 700;
 	}
  
 #portfoliolist {
-	margin: 0 auto;
+  background: pink;
+  height: 50%;
 }
  
 #portfoliolist .portfolio {
@@ -30,17 +41,29 @@
 	overflow:hidden;
 }
 
-
 .item{
     /*background:url(../img/portfolio/lact2.png) no-repeat center;
     background-size: cover;*/
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
     width: 20%;
+    height: 3.5em;
     background: #444;
     margin-right: 6.6%;
     margin-bottom: 3%;
     /*padding: 1%;*/
+    display: inline-block;
+}
+
+.itemgrande{
+   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    width: 20%;
+    height: 7em;
+    background: #adf524;
+    margin-right: 6.6%;
+    margin-bottom: 3%;
+  
     display: inline-block;
 }
 .item h3 { 

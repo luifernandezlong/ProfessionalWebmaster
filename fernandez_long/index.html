@@ -16,13 +16,20 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
 	<script src="js/fernandezlong.js" type="text/javascript"></script>
-	<script >
-	$(document).ready(function() {
-		$('.daddy_activo').click(function(e) {	
-			$('.daddy_activo').removeClass('click');
-				$("."+this.className.split(/\s+/)[0]).addClass('click');});
+	<script>
+		$(document).ready(function() {
+		$('.nav_active').click(function(e) {	
+			$('.nav_active').removeClass('bold');
+				$("."+this.className.split(/\s+/)[0]).addClass('bold');});
 	});
-		</script>		
+
+
+	// 	function(){
+	// 		$('.filter').click(function(e){
+	// 			$('.filter').removeClass('item');
+	// 		$("."+this.className.split(/\s+/)[0]).addClass('itemgrande');
+	
+	</script>		
 </head>
 
 
@@ -40,7 +47,7 @@
 
 					<a href="#home_responsive"></a><nav class="nav_home">
 						<ul>
-							<li><a href="#portfolio" title="" class=" foc_port nav_izquierda daddy_activodaddy_activo">PORTFOLIO<hr class="portfolio"></a></li><li><a href="#quien_soy" class="foc_qs  nav_centro daddy_activo">QUIEN SOY<hr class="quien_soy"></a></li><li><a href="#servicios" title="" class="foc_s nav_centro daddy_activo">SERVICIOS<hr class="servicios2"></a></li><li><a href="#contacto" title="" class="foc_con nav_derecha daddy_activo">CONTACTO<hr class="contacto"></a></li>
+							<li><a href="#portfolio" title="" class=" foc_port nav_izquierda nav_active">PORTFOLIO<hr class="portfolio"></a></li><li><a href="#quien_soy" class="foc_qs  nav_centro nav_active">QUIEN SOY<hr class="quien_soy"></a></li><li><a href="#servicios" title="" class="foc_s nav_centro nav_active">SERVICIOS<hr class="servicios2"></a></li><li><a href="#contacto" title="" class="foc_con nav_derecha nav_active">CONTACTO<hr class="contacto"></a></li>
 						</ul>
 					</nav>
 				</div>
@@ -52,7 +59,7 @@
 	<!-- 					FIN DE INICIO  				-->
 
 	<!--			HEAD 							-->
-	<div class="header" >
+	<div class="header">
 		
 		<a href="icon-menu" title=""></a>
 		<div class="nav">
@@ -61,7 +68,7 @@
 			<nav class="nav_sitio">
 
 				<ul>
-					<li class= "nav_focus"><a href="#home" title="home" class="nav_izquierda daddy_activo">INICIO<hr></a></li><li class= "nav_focus"><a href="#portfolio" title="portfolio" class="foc_port nav_izquierda daddy_activo">PORTFOLIO<hr></a></li><li class= "nav_focus"><a href="#quien_soy" title="quien soy" class="foc_qs nav_centro  daddy_activo">QUIEN SOY<hr></a></li><li class= "nav_focus"><a href="#servicios" title="servicios" class="foc_s nav_derecha nav_servicios daddy_activo">SERVICIOS<hr></a></li><li class= "nav_focus"><a href="#contacto" title="contacto" class="foc_con nav_derecha daddy_activo">CONTACTO<hr></a></li>
+					<li class= "nav_focus"><a href="#home" title="home" class="nav_izquierda nav_active">INICIO<hr></a></li><li class= "nav_focus"><a href="#portfolio" title="portfolio" class="foc_port nav_izquierda nav_active">PORTFOLIO<hr></a></li><li class= "nav_focus"><a href="#quien_soy" title="quien soy" class="foc_qs nav_centro  nav_active">QUIEN SOY<hr></a></li><li class= "nav_focus"><a href="#servicios" title="servicios" class="foc_s nav_derecha nav_servicios nav_active">SERVICIOS<hr></a></li><li class= "nav_focus"><a href="#contacto" title="contacto" class="foc_con nav_derecha nav_active">CONTACTO<hr></a></li>
 				</ul>
 			</nav>
 		</div>
@@ -77,7 +84,7 @@
 				<div class="adentro_portfolio">
 					<ul id="filters">
 						<li class="circulo"><span href="#portfolio" class="filter active serv4" data-filter=".branding, .editorial, .webotros">TODOS</span></li>
-						<li class="circulo"><span href="#portfolio" class="filter serv1" data-filter=".branding">BRANDING</span></li>
+						<li class="circulo"><span href="#portfolio" class="filter serv1" data-filter=".branding"><a name="branding"></a>BRANDING</span></li>
 						<li class="circulo"><span href="#portfolio" class="filter serv2" data-filter=".editorial">EDITORIAL</span></li>
 						<li class="circulo"><span href="#portfolio" class="filter serv3" data-filter=".webotros">WEB Y OTROS</span></li>
 					</ul>	
@@ -194,13 +201,17 @@
 				<section class="contenido_servicios">
 					<div class="trabajos"  data-aos="fade-up">
 						<div class="trabajo ">
-							<img src="img/servicios/branding.png" class="img_servicios">
-							<h3>BRANDING</h3>
-							<ul>
-								<li>Diseño de marca</li>
-								<li>Identidad corporativa</li>
-								<li>Rediseños</li>
-							</ul>
+							
+								<img src="img/servicios/branding.png" class="img_servicios">
+								<h3>BRANDING</h3>
+								<ul>
+									<li>Diseño de marca</li>
+									<li>Identidad corporativa</li>
+									<li>Rediseños</li>
+								</ul>
+								
+							<a href="#branding">	<h5>Ver Trabajos</h5>
+							</a>
 						</div>
 
 						<div class="trabajo">
@@ -221,6 +232,7 @@
 								<li>Responsive Design</li>
 								<li>Integración con redes</li>
 							</ul>
+							a
 						</div>
 
 						<div class="trabajo">

@@ -78,6 +78,11 @@
 
 
 /*INICIO PORTFOLIO*/
+.adentro_portfolio{
+    background: black;
+    height: 30%;
+    width: 100%;
+}
 
 .portfolio_circulos{
     margin-bottom: 5%;
