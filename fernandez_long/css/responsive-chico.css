@@ -75,3 +75,10 @@ a.icon-menu:before {
   content: "\e900";
  
 }
+
+
+.adentro_portfolio{
+    background: lightblue;
+    
+    width: 100%;
+}

@@ -29,9 +29,15 @@
     margin:30% -4%;
 }
 
+.nav_sitio ul li a{
+    font-size: 0.93em;
+
+}
 
 
-
+.nav h1{
+    font-size: 1.7em;
+}
 /*.nav_sitio{
 	margin-bottom: 15%;
 }
@@ -96,9 +102,15 @@
 
 }
 
-
-
-
+.circulo{
+   width: 20%;
+    line-height: 6em;
+    margin-right: 10%;
+    font-size: 1.2em;
+}
+#filter{
+    margin-left:8%;
+}
 
 /*FIN PORTFOLIO*/
 

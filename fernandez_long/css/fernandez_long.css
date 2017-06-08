@@ -82,7 +82,9 @@ h1{
     font-size: 2.2em;
     text-align: left;
     padding: 0;
-    margin: 2% 0 3%;
+    line-height:0.25em;
+   /* margin-bottom: 
+    margin: 2% 0 3%;*/
     width: 45%;
 }
 
@@ -344,6 +346,9 @@ hr.servicios2{
    /*max-width: 90%;*/
     margin: auto;
     padding-top: 5%;
+    /*background: lightblue;*/
+    height: 100%;
+
 }
 
 
@@ -352,7 +357,7 @@ hr.servicios2{
     width: 60%;
     float: left;
     padding-top: 10%;
-   
+   /*background: lightyellow;*/
 }
 
 .foto_qs{
@@ -505,9 +510,10 @@ a.cv{
 }
 
 .dibujoentero{
-    width: 40%;
+    max-width: 40%;
+    max-height:40em;
     float: right;
-    margin-top: 10%;
+    margin-top: 7%;
      transform:translate(0px,0px);
         -ms-transform:translate(0px,0px); 
         -moz-transform:translate(0px,0px); 
@@ -621,12 +627,11 @@ video::-webkit-media-controls {
    margin: auto;
 }
 .circulo{
-    border-radius: 100%;
     height: 6.9em;
     width:7.5em;
     line-height: 6.9em;
- margin-right: 9.3%;
- margin-bottom: 5;
+    margin-right: 9.3%;
+    margin-bottom: 5%;
 
     text-align: center;
     font-size: 1.4em;
