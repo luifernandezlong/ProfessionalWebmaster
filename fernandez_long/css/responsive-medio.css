@@ -1,17 +1,39 @@
 .holder, .nav{
     max-width: 760px;
 }
+/*NAV*/
+
+
+.nav_sitio{
+    width:65%;
+}
+.nav_sitio ul li a{
+    font-size: 0.93em;
+
+}
+
+
+.nav h1{
+    font-size: 1.7em;
+    line-height: 0.5em;
+}
+/*.nav_sitio{
+    margin-bottom: 15%;
+}
+*/
+
+
 
 /*INICIO*/
 
 
 .frase{
-	margin-top: -15%;
-    /*background: red;*/
+	padding-top: 45%; 
 }
 
 .nav_home{
 	margin-top:5%;
+    font-size: 1.2em;
 }
 
 .logo_chico{
@@ -29,19 +51,6 @@
     margin:30% -4%;
 }
 
-.nav_sitio ul li a{
-    font-size: 0.93em;
-
-}
-
-
-.nav h1{
-    font-size: 1.7em;
-}
-/*.nav_sitio{
-	margin-bottom: 15%;
-}
-*/
 /*FIN INICIO*/
 
 
@@ -50,30 +59,42 @@
 
 /*QUIEN SOY*/
 .contenido_qs{
-    margin-top: 15%;
+    padding: 0;
+    /*background: lightgray;*/
 }
-
+.dibujoentero{
+    margin-top: 8.5%;
+    max-height:30em;
+}
 .foto_qs{
-	width: 38%;
+	width: 30%;
+}
+h3.titulo_qs{
+    font-size: 1.1em;
+    line-height: 1.2em;
 }
 .texto_qs{
     line-height: 1.15em;
     text-align: left;
     float: right;
-    width: 50%;
-    font-size: 1.25em;
+    width: 65%;
+    font-size: 1.1em;
+    padding: 0;
 }
 .botoncontactame{
     margin-top:28%;
-    margin-left: 17%;
+    margin-left: 20%;
+    font-size: 0.8em;
 }
 
 .botoncv{
-	margin-top: 31%;
-	margin-left: 17.5%;
+    font-size: 0.7em;
+	margin-top: 35%;
+	margin-left: 20.5%;
+
 }
 .fondocontactame{
-    margin-top: -5%;
+    margin-top: -3%;
 }
 
 
@@ -88,6 +109,10 @@
     background: black;
     height: 30%;
     width: 100%;
+    padding-top: 10%;
+    margin: 0 auto;
+    /*padding-top: 10%;*/
+
 }
 
 .portfolio_circulos{
@@ -96,25 +121,43 @@
 .rectangulo{
     margin-bottom: 3%;
 }
-.adentro_portfolio{
-    padding-top: 18%;
-    margin: 5% auto;
-
-}
 
 .circulo{
-   width: 20%;
-    line-height: 6em;
-    margin-right: 10%;
-    font-size: 1.2em;
-}
-#filter{
-    margin-left:8%;
+   width: 18%;
+   line-height: 6em;
+   font-size: 1.2em;
+   margin-left: -2%;
+   margin-right: 12%;
 }
 
 /*FIN PORTFOLIO*/
 
+/*INICIO SERVICIOS*/
+.contenido_servicios{
+    padding-top: 15%;
+    height: 100%;
+    background: lightyellow;
+}
+.trabajo{
+    width: 22%;
+    margin-right: 3%;
 
+}
+.trabajo img{
+    width: 60%;
+}
+
+.trabajo h3{
+    font-size: 0.92em;
+}
+.trabajo ul{
+    font-size: 0.85em;
+}
+
+
+
+
+/*FIN SERVICIOS*/
 
 
 
@@ -137,8 +180,11 @@
 .boton1{
     margin-right: 9.5%;
 }
+.formulario{
+    height: 50%;
+}
 
-@media screen and (max-width:960px){
+/*@media screen and (max-width:960px){
     .contenido_qs{
         padding-top: 10%;
     }
@@ -152,8 +198,8 @@
          margin-left: 25%;
     }
 
-
-
+*/
+/*
     .circulo{
         margin-right: 5%;
     }
@@ -166,5 +212,5 @@
     }
     .rectangulo:nth-child(4n+4){
         margin-right: 0;
-    }
+    }*/
 }
