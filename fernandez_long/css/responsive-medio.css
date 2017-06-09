@@ -1,3 +1,4 @@
+
 .holder, .nav{
     max-width: 760px;
 }
@@ -29,7 +30,7 @@
 
 .frase{
 	padding-top: 45%; 
-}
+    margin-bottom: 5%;
 
 .nav_home{
 	margin-top:5%;
@@ -39,7 +40,7 @@
 .logo_chico{
     position: absolute;
     width: 20%;
-    margin:30% -10%; 
+    margin:20% -10%; 
     
 }
 
@@ -48,7 +49,7 @@
     -webkit-transition: all 0.5s;
     moz-webkit-transition:all 0.5s;
     o-webkit-transition:all 0.5s;
-    margin:30% -4%;
+    margin:20% -4%;
 }
 
 /*FIN INICIO*/
@@ -108,7 +109,7 @@ h3.titulo_qs{
 .adentro_portfolio{
     background: black;
     height: 30%;
-    width: 100%;
+    max-width: 100%;
     padding-top: 10%;
     margin: 0 auto;
     /*padding-top: 10%;*/
@@ -127,7 +128,7 @@ h3.titulo_qs{
    line-height: 6em;
    font-size: 1.2em;
    margin-left: -2%;
-   margin-right: 12%;
+   margin-right: 11.5%;
 }
 
 /*FIN PORTFOLIO*/
@@ -213,4 +214,3 @@ h3.titulo_qs{
     .rectangulo:nth-child(4n+4){
         margin-right: 0;
     }*/
-}

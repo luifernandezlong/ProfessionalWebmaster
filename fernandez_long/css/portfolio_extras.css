@@ -1,0 +1,29 @@
+
+
+:root {
+  --fucsia: #f4989e;
+  --naranja: #f7955a;
+}
+
+
+
+.extras_adentro{
+  width: 50%;
+  padding-top: 3%;
+  margin:0 auto;
+  /*background: red;*/
+}
+.nombre_extras{
+  color:yellow;
+  font-size: 1.5em;
+  margin-top: 25%;
+  font-weight: 500;
+  /*float: left;*/
+}
+
+.tipo_extras{
+  color:gray;
+  font-size: 1em;
+  font-weight: 400;
+  margin-top: 2%;
+}
