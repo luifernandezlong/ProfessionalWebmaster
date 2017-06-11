@@ -5,7 +5,6 @@
 
 .extras_adentro{
   max-width: 960px;
-  
   margin:0 auto;
   margin-top: 8%;
 }
@@ -14,7 +13,6 @@
   float: left;
   max-width: 50%;
   margin-right: 10%;
-
 }
 
 .foto_extras{
@@ -26,7 +24,6 @@
 .descripcion_extras{
   font-size: 1em;
   color: gray;
-  /*padding-top: 2%;*/
   padding-bottom: 2%;
 }
 
@@ -38,7 +35,6 @@
   margin: 0;
   padding: 0;
   font-weight: 500;
-  /*float: left;*/
 }
 
 .tipo_extras{

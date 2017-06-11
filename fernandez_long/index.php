@@ -34,25 +34,24 @@
 
 
 <body><!-- 					INICIO 						-->
-
-		<a name="home"> </a>
-		<div class="fotofondo" ></div> <!-- esta es mi foto --> 
-		<a name="home_responsive">
-			<div class="fondo_inicio">
-				<center><img src="img/logo-01.png" alt="logo" class="logo_chico" /><!-- este mi logo --></center>
-				<div class="holder"> 
-					<div class="frase">
-						<span class="cita"> “El diseño es el embajador silencioso de una marca”</span>
-						<span class="autor"> -Paul Rand</span>
-					</div>
-					<a href="#home_responsive"></a><nav class="nav_home">
-						<ul>
-							<li><a href="#portfolio" title="" class=" foc_port nav_izquierda nav_active">PORTFOLIO<hr class="portfolio"></a></li><li><a href="#quien_soy" class="foc_qs  nav_centro nav_active">QUIEN SOY<hr class="quien_soy"></a></li><li><a href="#servicios" title="" class="foc_s nav_centro nav_active">SERVICIOS<hr class="servicios2"></a></li><li><a href="#contacto" title="" class="foc_con nav_derecha nav_active">CONTACTO<hr class="contacto"></a></li>
-						</ul>
-					</nav>
+	<a name="home"> </a>
+	<div class="fotofondo" ></div> <!-- esta es mi foto --> 
+	<a name="home_responsive">
+		<div class="fondo_inicio">
+			<center><img src="img/logo-01.png" alt="logo" class="logo_chico" /><!-- este mi logo --></center>
+			<div class="holder"> 
+				<div class="frase">
+					<span class="cita"> “El diseño es el embajador silencioso de una marca”</span>
+					<span class="autor"> -Paul Rand</span>
 				</div>
+				<a href="#home_responsive"></a><nav class="nav_home">
+					<ul>
+						<li><a href="#portfolio" title="" class=" foc_port nav_izquierda nav_active">PORTFOLIO<hr class="portfolio"></a></li><li><a href="#quien_soy" class="foc_qs  nav_centro nav_active">QUIEN SOY<hr class="quien_soy"></a></li><li><a href="#servicios" title="" class="foc_s nav_centro nav_active">SERVICIOS<hr class="servicios2"></a></li><li><a href="#contacto" title="" class="foc_con nav_derecha nav_active">CONTACTO<hr class="contacto"></a></li>
+					</ul>
+				</nav>
 			</div>
-		</a>
+		</div>
+	</a>
 
 	
 	<!-- 					FIN DE INICIO  				-->
@@ -119,13 +118,13 @@
 				    </div>
 			    </a>
 			    <a href="portfolio_extras.php?nombre=Televisión Pública&tipo=Branding e identidad corporativa&tags=Branding, logos, identidad, papelería, piezas varias, videos.&descripcion=Este trabajo universitario tuvo como principales conceptos la emisión generada por una señal televisiva y lo público. Se creó toda una identidad formada por distintas piezas de papelería, gráfica vehicular, el dise{o de una página web y una aplicación móvil, y un corto video temático.&foto=img/portfolio/lact2.png" title="">
-					<div class="portfolio item  webotros" data-cat="webotros">
+					<div class="portfolio item  webotros tvp" data-cat="webotros">
 					     <h3>TVP</h3>
 				    </div>
 				</a>
 			    <a href="portfolio_extras.php?nombre=Ilustraciones&tipo=&tags=&descripcion=¡Acá presento algunas de mis ilustraciones! Todas fueron realizadas de manera libre con distintos conceptos que imaginé.&foto=img/portfolio/lact2.png" title="">
-				    <div class="portfolio item  webotros ilus" data-cat="webotros">
-					    	<h3>¡Mis ilustraciones!</h3>
+				    <div class="portfolio item  webotros fotografias" data-cat="webotros">
+					    	<h3>Fotografías</h3>
 					</div>
 				</a>
 				<a href="portfolio_extras.php?nombre=&tipo=Afiches de distintas temáticas&tags=&descripcion=...&foto=img/portfolio/lact2.png" title="">
@@ -134,8 +133,8 @@
 				    </div>
 				</a>
 			    <a href="portfolio_extras.php?nombre=&tipo=Fotografías de distintas temáticas&tags=&descripcion=...&foto=img/portfolio/lact2.png" title="">
-				    <div class="portfolio  item webotros item4 fotografias" data-cat="webotros">
-					     <h3>Fotografías</h3>
+				    <div class="portfolio  item webotros item4 ilus" data-cat="webotros">
+					     <h3>¡Mis ilustraciones!</h3>
 				    </div>
 			    </a>	    
 			</div> 
@@ -175,35 +174,6 @@
 				
 			</div>
 		</div>
-								<!-- 	<div class="caricatura">
-										
-									
-									<video width="30%">
-									  <source src="img/quien_soy/gif.mp4" type="video/mp4">
-									 
-									</video>
-									</div>	
-						 -->
-							<!-- 		<div id="videosList">           
-										<div class="video">
-										    <video class="thevideo" loop >
-										      <source src="img/quien_soy/gif.mp4" type="video/mp4">
-										      <!-- <source src="https://giant.gfycat.com/VerifiableTerrificHind.webm" type="video/webm"> 
-										    </video>
-										  </div>
-									</div>
-											 -->	<!-- <div class="dibujo">
-											<img src="img/caricatura--03.png" class="cuerpo" alt="">
-										<img src="img/caricatura_antebrazo-06.png" alt="" class="antebrazo">
-
-										<img src="img/caricatura_brazo-04.png" alt="" class="brazo">
-										<img src="img/caricatura_mano-05.png" class="mano">	
-										
-												
-										</div>		 -->
-		
-
-
 
 	<a name="servicios"></a>
 		<div class="holder servicios">
@@ -282,7 +252,8 @@
 		
 		</div>
 
-	<a name="contacto"></a>
+	<a name="contacto">
+	</a>
 		<div class="contenido_contacto contacto">
 		
 			<center>

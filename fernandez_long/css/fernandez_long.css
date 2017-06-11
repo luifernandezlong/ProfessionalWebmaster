@@ -50,7 +50,7 @@ body{
     max-width: 960px;
     height: 100%;
     margin: 0 auto;
-    /*background: red;*/
+
 }
 
 
@@ -80,8 +80,7 @@ h1{
     text-align: left;
     padding: 0;
     line-height:0.25em;
-   /* margin-bottom: 
-    margin: 2% 0 3%;*/
+
     width: 45%;
 }
 
@@ -94,7 +93,7 @@ h1{
     width: 55%;
     float: right;
     padding: 0;
-    /*display: flex;*/
+
 }
 
 
@@ -172,23 +171,8 @@ hr{
 
 
 /*INICIO HOME*/
-/*home que funciona
-.fondo_inicio{
-  background: url(../img/fondo_inicio.jpg) fixed center center #444;
-    background-size: cover; 
-    height: 100%;
-    z-index: 2;
-    position: relative;
 
-}
-.logo_chico{
-    width: 40%;
-    margin: 30%;
-    z-index: 3;
-   
 
-}
-*/
 .fotofondo{
     width:100%;
     height: 100%;
@@ -265,15 +249,11 @@ hr{
     visibility: visible;
 }
 
-hr.inicio{
-    
-    width: 33%;
-}
 hr.portfolio{
-    width: 58%;
+    width: 61%;
 }
 hr.quien_soy{
-    width: 60%;
+    width: 58%;
     margin: 0 auto;
 } 
 hr.servicios{
@@ -340,10 +320,10 @@ hr.servicios2{
 /*INICIO QUIEN SOY*/
 
 .contenido_qs{
-   /*max-width: 90%;*/
+
     margin: auto;
     padding-top: 5%;
-     /*background: red;*/
+
     height: 100%;
 }
 
@@ -517,7 +497,6 @@ a.cv{
         -ms-transition: all .5s ease-in-out; 
         -o-transition: all .5s  ease-in-out; 
 
-    /*background: url(../img/quien_soy/cuerpocompleto-07.png);*/
 }
 .dibujoentero:hover{
     transform:translate(0em,3em);
@@ -618,7 +597,6 @@ video::-webkit-media-controls {
 .adentro_portfolio{
    padding-top: 15%;
    margin: auto;
-   background: lightyellow;
 }
 .circulo{
     height: 6.9em;
@@ -667,13 +645,6 @@ li.circulo a{
     -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
     filter: grayscale(0%);
 }
-/*
-.rectangulo{
- 
-    font-size: 1.5em;
-   
-}
-*/
 
 
 /*FIN PORTFOLIO*/
@@ -684,7 +655,6 @@ li.circulo a{
 /*INICIO SERVICIOS*/
 .contenido_servicios{
     width: 100%;
-    /*height: 100%;*/
     margin:auto;
     padding-top: 20%;
 }
@@ -788,7 +758,6 @@ h2#contacto{
     color:var(--naranja);
     font-weight: 400;
     margin-left: -1%;
-    /*margin: 0 auto;*/
 }
 
 #section_formulario

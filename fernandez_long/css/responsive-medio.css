@@ -18,12 +18,26 @@
     font-size: 1.7em;
     line-height: 0.5em;
 }
-/*.nav_sitio{
-    margin-bottom: 15%;
+
+hr.portfolio{
+    width: 64%;
 }
-*/
-
-
+hr.quien_soy{
+    width:61%;
+    margin: 0 auto;
+} 
+hr.servicios{
+    width: 59.5%;
+    margin: 0 0 0 auto;
+} 
+hr.contacto{
+    width: 61%;
+    margin: 0 0 0 auto;
+} 
+hr.servicios2{
+    width: 59.5%;
+    margin: auto;
+} 
 
 /*INICIO*/
 
@@ -41,7 +55,7 @@
 .logo_chico{
     position: absolute;
     width: 20%;
-    margin:20% -10%; 
+    margin:15% -10%; 
     
 }
 
@@ -50,7 +64,7 @@
     -webkit-transition: all 0.5s;
     moz-webkit-transition:all 0.5s;
     o-webkit-transition:all 0.5s;
-    margin:20% -4%;
+    margin:15% -4%;
 }
 
 /*FIN INICIO*/
@@ -62,7 +76,6 @@
 /*QUIEN SOY*/
 .contenido_qs{
     padding: 0;
-    /*background: lightgray;*/
 }
 .dibujoentero{
     margin-top: 8.5%;
@@ -82,22 +95,21 @@ h3.titulo_qs{
     width: 65%;
     font-size: 1.1em;
     padding: 0;
-    background: lightgray;
 }
 .botoncontactame{
-    margin-top:25%;
+    margin-top:18%;
     margin-left: 20%;
     font-size: 0.8em;
 }
 
 .botoncv{
-    font-size: 0.7em;
-	margin-top: 30%;
-	margin-left: 20.5%;
+    font-size: 0.8em;
+	margin-top: 22%;
+	margin-left: 18.7%;
 
 }
 .fondocontactame{
-    margin-top: -3%;
+    margin-top: -2%;
 }
 
 
@@ -109,12 +121,10 @@ h3.titulo_qs{
 
 /*INICIO PORTFOLIO*/
 .adentro_portfolio{
-    background: black;
     height: 30%;
     max-width: 100%;
     padding-top: 10%;
     margin: 0 auto;
-    /*padding-top: 10%;*/
 
 }
 
@@ -133,13 +143,21 @@ h3.titulo_qs{
    margin-right: 11.5%;
 }
 
+
+.item h3{
+    font-size: 1em;
+    line-height:2em;
+}
 /*FIN PORTFOLIO*/
+
+
+
+
 
 /*INICIO SERVICIOS*/
 .contenido_servicios{
     padding-top: 15%;
     height: 100%;
-    background: lightyellow;
 }
 .trabajo{
     width: 22%;
@@ -165,10 +183,10 @@ h3.titulo_qs{
 
 
 /*INICIO CONTACTO*/
-.contenido_contacto {
-
-    padding-top: 20%;
+.contenido_contacto{
+    margin-bottom: 2%;
 }
+
 .campos{
     width: 50%;
 }
@@ -187,3 +205,6 @@ h3.titulo_qs{
     height: 50%;
 }
 
+.botones_footer{
+    padding-bottom: 1%;
+}
