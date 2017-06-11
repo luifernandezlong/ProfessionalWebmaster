@@ -1,22 +1,42 @@
-
-
 :root {
   --fucsia: #f4989e;
   --naranja: #f7955a;
 }
 
-
-
 .extras_adentro{
-  width: 50%;
-  padding-top: 3%;
+  max-width: 960px;
+  
   margin:0 auto;
-  /*background: red;*/
+  margin-top: 8%;
 }
+
+.extras_palabras{
+  float: left;
+  max-width: 50%;
+  margin-right: 10%;
+
+}
+
+.foto_extras{
+  float: right;
+  max-width: 45%;
+  margin-bottom: 3%;
+}
+
+.descripcion_extras{
+  font-size: 1em;
+  color: gray;
+  /*padding-top: 2%;*/
+  padding-bottom: 2%;
+}
+
+
 .nombre_extras{
-  color:yellow;
+  color:var(--naranja);
   font-size: 1.5em;
-  margin-top: 25%;
+  line-height: 1.2em;
+  margin: 0;
+  padding: 0;
   font-weight: 500;
   /*float: left;*/
 }
@@ -24,6 +44,46 @@
 .tipo_extras{
   color:gray;
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 300;
   margin-top: 2%;
+  margin-bottom: 1%;
+}
+
+.otros_extras{
+  color: gray;
+  font-weight: 300;
+  font-size: 1em;
+  }
+
+
+@media screen and (max-width:960px){
+    .extras_adentro{
+      max-width: 700px;
+    }
+}
+@media screen and (max-width:700px){
+    .extras_adentro{
+      max-width: 500px;
+      margin-top:15%;
+    }
+     .extras_palabras{
+      float: none;
+    
+    }
+    .foto_extras{
+      float: none;
+    }
+    
+}
+@media screen and (max-width:500px){
+    .extras_adentro{
+      max-width: 300px;
+     margin-top:15%;
+    }
+    .extras_palabras{
+      float: none;
+    }
+    .foto_extras{
+      float: none;
+    }
 }

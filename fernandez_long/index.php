@@ -78,63 +78,63 @@
 			</div>
 						
 			<div id ="portfoliolist">		  
-				<a href="portfolio_extras.php?nombre=Lactum&tipo=Identidad corporativa&descripcion=...&foto=img/portfolio/lact2.png">    
-				    <div class="portfolio item branding" data-cat="branding">
-				 	  	<h3>Lactum</h3>
+				<a href="portfolio_extras.php?nombre=Lactum&tipo=Identidad corporativa&tags=Branding, logos, identidad, papelería.&descripcion=El diseño fue realizado para Lactum, una empresa ficticia de productos lácteos. Comenzando por el logotipo basado en la simplificación del concepto de ubre como productor de lácteos, hasta llegar al punto donde se comprendiera el chiste tipográfico y el concepto en el mismo momento. Luego se prosiguió con la identidad corporativa, formada por una carpeta de tipo tríptico y papelería interna y externa.&foto=img/portfolio/lact2.png">    
+				    <div class="portfolio item branding lact" data-cat="branding">
+				    	<h3>Lactum - Ver más</h3>
 				    </div>
 				</a>
-			    <a href="portfolio_extras.php?nombre=Camino de los Jesuitas&tipo=Branding y piezas editoriales&descripcion=...&foto=img/portfolio/lact2.png" title="">
-				    <div class="portfolio  item branding"  data-cat="branding">
+			    <a href="portfolio_extras.php?nombre=Camino de los Jesuitas&tipo=Branding y diseño editoriales&tags=Branding, marcas, identidad, piezas promocionales, producción analógica, videos.&descripcion=Camino de los Jesuitas tiene como función brindar un recorrido turístico de tipo histórico a personas que deseen conocer la historia de la comunidad jesuítica en el sector que abarca el sur de Paraguay, la provincia de Misiones en Argentina, y una pequeña zona de Brasil. Los principales conceptos de la marca fueron la cruz y los caminos, que se muestran con el estiramiento exagerado de los caracteres, y el desgaste en el cual se encuentran las distintas Ruinas. Luego se pasó a diseñar un panel informativo y un afiche promocional de 50x70cm,  una guía informativa junto con un sistema de 3 postales y un video promocional de corta duración . &foto=img/portfolio/lact2.png" title="">
+				    <div class="portfolio  item branding camino"  data-cat="branding">
 				    	<h3>Camino de los...</h3>
 				    </div>
 				</a>
-			    <a href="portfolio_extras.php?nombre=Camino de los Jesuitas&tipo=Branding y piezas editoriales&descripcion=...&foto=img/portfolio/lact2.png">
-				    <div class="portfolio item  branding"  data-cat="branding">
+			    <a href="portfolio_extras.php?nombre=Camino de los Jesuitas&tipo=Branding y diseño editoriales&tags=Branding, logos, identidad, diseño editorial, diseño de diario.&descripcion=Se realizó el diseño integral de un periódico de la capital cordobesa, tomando como concepto un ícono de la ciudad que es el encauzamiento entre dos cuerpos de agua de la zona, que en la cultura popular es llamado Cañada.&foto=img/portfolio/lact2.png">
+				    <div class="portfolio item  branding canada"  data-cat="branding">
 				 	    	<h3>Cañada</h3>
 				    </div>
 				</a>
-			    <a href="portfolio_extras.php?nombre=Zenitram&tipo=Branding y piezas gráficas&descripcion=...&foto=img/portfolio/lact2.png" title="">
-				    <div class="portfolio item  branding item4"  data-cat="branding">
+			    <a href="portfolio_extras.php?nombre=Zenitram&tipo=Branding y piezas gráficas&tags=Branding, logos, identidad, piezas promocionales, producción analógica.&descripcion=Realizado en ambiente universitario, este trabajo partió de la película homónima, de la cual se tomaron los conceptos de choque, luces, devastación y efectos alucinógenos provocados por la ingesta de estupefacientes para crear una marca que contara resumidamente la historia del film. Se realizaron 3 paneles cuadrados que nacieron de distintas escenas claves, un afiche cinematográfico de gran escala,  un libro informativo y un video con los títulos de la pieza hecho con stop motion .&foto=img/portfolio/lact2.png" title="">
+				    <div class="portfolio item  branding item4 zenitram"  data-cat="branding">
 				 	      <h3>Zenitram</h3>
 				    </div>
 				</a>
-			     <a href="portfolio_extras.php?nombre=Cañada&tipo=Diseño de diario&descripcion=...&foto=img/portfolio/lact2.png" title="">
-				    <div class="portfolio item  editorial"  data-cat="editorial">
+			     <a href="portfolio_extras.php?nombre=Cañada&tipo=Diseño editorial&tags=Branding, logos, identidad, diseño editorial, diseño de diario.&descripcion=Se realizó el diseño integral de un periódico de la capital cordobesa, tomando como concepto un ícono de la ciudad que es el encauzamiento entre dos cuerpos de agua de la zona, que en la cultura popular es llamado Cañada.&foto=img/portfolio/lact2.png" title="">
+				    <div class="portfolio item  editorial canada"  data-cat="editorial">
 				 	      <h3>Cañada</h3>
 				    </div>
 				</a>
-			    <a href="portfolio_extras.php?nombre=Polina Ivanova&tipo=Diseño de libro de texto e imágenes&descripcion=...&foto=img/portfolio/lact2.png" title="">
-				    <div class="portfolio item  editorial"  data-cat="editorial">
+			    <a href="portfolio_extras.php?nombre=Polina Ivanova&tipo=Diseño editorial&tags=Diseño editorial, diseño de libro, producción analógica, edición fotográfica.&descripcion=Este libro, realizado sin fines comerciales, se basó en los dibujos de la artista Polina Ivanova, en los cuales suelen verse patrones y figuras humanas realizadas con distintas técnicas, muchas veces fusionadas de diversas maneras. La pieza fue realizada tanto de manera manual en caso de algunos dibujos, como con edición de los trabajos originales y la utilización de herramientas de diseño editorial como Adobe Indesign.&foto=img/portfolio/lact2.png" title="">
+				    <div class="portfolio item  editorial polina"  data-cat="editorial">
 				 	      <h3>Polina Ivanova</h3>
 				    </div>
 				</a>
-			    <a href="portfolio_extras.php?nombre=Grito!&tipo=Branding y diseño de revista&descripcion=...&foto=img/portfolio/lact2.png" title="">
-					<div class="portfolio item  editorial" data-cat="editorial">
+			    <a href="portfolio_extras.php?nombre=Grito!&tipo=Branding y Diseño editorial&tags=Branding, logos, diseño editorial, diseño de revista, producción analógica.&descripcion=El proyecto universitario consistió en el diseño en pareja del nombre, marca y estructura de una revista con la temática de arte urbano.&foto=img/portfolio/lact2.png" title="">
+					<div class="portfolio item  editorial grito" data-cat="editorial">
 				     		<h3>Grito!</h3>
 				    </div>
 				</a>
-			    <a href="portfolio_extras.php?nombre=Camino de los Jesuitas&tipo=Branding y piezas editoriales&descripcion=...&foto=img/portfolio/lact2.png" title="">
-			    	<div class="portfolio item  editorial item4" data-cat="editorial">
+			    <a href="portfolio_extras.php?nombre=Camino de los Jesuitas&tipo=Branding y diseño editoriales&tags=Branding, marcas, identidad, piezas promocionales, producción analógica, videos.&descripcion=Camino de los Jesuitas tiene como función brindar un recorrido turístico de tipo histórico a personas que deseen conocer la historia de la comunidad jesuítica en el sector que abarca el sur de Paraguay, la provincia de Misiones en Argentina, y una pequeña zona de Brasil. Los principales conceptos de la marca fueron la cruz y los caminos, que se muestran con el estiramiento exagerado de los caracteres, y el desgaste en el cual se encuentran las distintas Ruinas. Luego se pasó a diseñar un panel informativo y un afiche promocional de 50x70cm,  una guía informativa junto con un sistema de 3 postales y un video promocional de corta duración .&foto=img/portfolio/lact2.png" title="">
+			    	<div class="portfolio item  editorial item4 camino" data-cat="editorial">
 			       		<h3>Camino de los...</h3>
 				    </div>
 			    </a>
-			    <a href="portfolio_extras.php?nombre=Televisión Pública&tipo=Branding e identidad corporativa&descripcion=...&foto=img/portfolio/lact2.png" title="">
+			    <a href="portfolio_extras.php?nombre=Televisión Pública&tipo=Branding e identidad corporativa&tags=Branding, logos, identidad, papelería, piezas varias, videos.&descripcion=Este trabajo universitario tuvo como principales conceptos la emisión generada por una señal televisiva y lo público. Se creó toda una identidad formada por distintas piezas de papelería, gráfica vehicular, el dise{o de una página web y una aplicación móvil, y un corto video temático.&foto=img/portfolio/lact2.png" title="">
 					<div class="portfolio item  webotros" data-cat="webotros">
 					     <h3>TVP</h3>
 				    </div>
 				</a>
-			    <a href="portfolio_extras.php?nombre=Televisión Pública&tipo=Branding y piezas de video&descripcion=...&foto=img/portfolio/lact2.png" title="">
-				    <div class="portfolio item  webotros" data-cat="webotros">
-					    	<h3>TVP - video</h3>
+			    <a href="portfolio_extras.php?nombre=Ilustraciones&tipo=&tags=&descripcion=¡Acá presento algunas de mis ilustraciones! Todas fueron realizadas de manera libre con distintos conceptos que imaginé.&foto=img/portfolio/lact2.png" title="">
+				    <div class="portfolio item  webotros ilus" data-cat="webotros">
+					    	<h3>¡Mis ilustraciones!</h3>
 					</div>
 				</a>
-				<a href="portfolio_extras.php?nombre=&tipo=Afiches de distintas temáticas&descripcion=...&foto=img/portfolio/lact2.png" title="">
-				    <div class="portfolio item webotros" data-cat="webotros">
+				<a href="portfolio_extras.php?nombre=&tipo=Afiches de distintas temáticas&tags=&descripcion=...&foto=img/portfolio/lact2.png" title="">
+				    <div class="portfolio item webotros afiches" data-cat="webotros">
 					   		 <h3>Afiches</h3>
 				    </div>
 				</a>
-			    <a href="portfolio_extras.php?nombre=&tipo=Fotografías de distintas temáticas&descripcion=...&foto=img/portfolio/lact2.png" title="">
-				    <div class="portfolio  item webotros item4" data-cat="webotros">
+			    <a href="portfolio_extras.php?nombre=&tipo=Fotografías de distintas temáticas&tags=&descripcion=...&foto=img/portfolio/lact2.png" title="">
+				    <div class="portfolio  item webotros item4 fotografias" data-cat="webotros">
 					     <h3>Fotografías</h3>
 				    </div>
 			    </a>	    

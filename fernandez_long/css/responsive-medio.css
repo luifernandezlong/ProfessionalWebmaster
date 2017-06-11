@@ -82,16 +82,17 @@ h3.titulo_qs{
     width: 65%;
     font-size: 1.1em;
     padding: 0;
+    background: lightgray;
 }
 .botoncontactame{
-    margin-top:28%;
+    margin-top:25%;
     margin-left: 20%;
     font-size: 0.8em;
 }
 
 .botoncv{
     font-size: 0.7em;
-	margin-top: 35%;
+	margin-top: 30%;
 	margin-left: 20.5%;
 
 }
@@ -186,32 +187,3 @@ h3.titulo_qs{
     height: 50%;
 }
 
-/*@media screen and (max-width:960px){
-    .contenido_qs{
-        padding-top: 10%;
-    }
-    .botoncontactame{
-        margin-top: 32%;
-         margin-left: 24%;
-    }
-    .botoncv{
-        padding-top: 1%;
-        margin-top: 35%;
-         margin-left: 25%;
-    }
-
-*/
-/*
-    .circulo{
-        margin-right: 5%;
-    }
-    .circulo:last-child{
-    margin-right: 0;
-    }
-    .rectangulo{
-        width: 6.9em;
-        margin-right: 5%;
-    }
-    .rectangulo:nth-child(4n+4){
-        margin-right: 0;
-    }*/
