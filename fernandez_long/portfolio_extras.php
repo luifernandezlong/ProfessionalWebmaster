@@ -23,22 +23,28 @@
 		$tipo=$_GET['tipo'];
 		$descripcion=$_GET['descripcion'];	
 		$foto=$_GET['foto'];
-		// $tags=$_GET['tags'];
+		$foto2=$_GET['foto2'];
+		$foto3=$_GET['foto3'];
+		$foto4=$_GET['foto4'];
+		$tags=$_GET['tags'];
 			
 	?>
 
 	<div class="extras_adentro">
 		<img class="foto_extras" src="<?php echo $foto; ?>">
+		<img class="foto_extras" src="<?php echo $foto2; ?>">
+		<img class="foto_extras" src="<?php echo $foto3; ?>">
+		<img class="foto_extras" src="<?php echo $foto4; ?>">
 		<div class="extras_palabras">
 			<p class="nombre_extras"><?php echo $nombre; ?></p>
 			<p class="descripcion_extras"><?php echo $descripcion; ?></p>
 			<h3 class="tipo_extras">CATEGORÍA</h3>
 				<p class="otros_extras"><?php echo $tipo; ?></p>
-			<!-- <h3 class="tipo_extras">TAGS</h3>
-				<p class="otros_extras"><?php echo $tags; ?></p> -->
+			<h3 class="tipo_extras">TAGS</h3>
+				<p class="tags_extras"><?php echo $tags; ?></p>
 		</div>
 		
-
+		<a href="index.php #portfolio" class="volver">← Volver al portfolio</a>
 	</div>
 	
 </body>

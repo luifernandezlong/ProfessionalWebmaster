@@ -9,47 +9,49 @@
   font-style: normal;
 }
 
-
 .logo_chico{
-	margin-top: 0;
+	margin-top: 20%;
 }
-.fondo_inicio:hover .logo_chico{
-	opacity: 0;
-	margin: 0;
-    -webkit-transition: all 0.5s;
-    moz-webkit-transition:all 0.5s;
-    o-webkit-transition:all 0.5s;
 
-}
-.fondo_inicio:hover .logo_chico{
+
+
+.fondo_inicio.frase{
 	visibility: hidden;
 }
-
-
-.fondo_inicio:hover .frase{
-	visibility: hidden;
+#home_responsive{
+	width: 90%;
 }
 .nav_home{
-	margin:-10% 45%;
+	margin-top:-30% ;
 	text-align: center;
-
+	padding-left: 30%;
+	background: red;
 }
 .nav_home ul{
 	display: list-item;
 	padding: 0;
 	margin: 0;
 }
-
+.nav_home ul li{
+	width: 45%;
+	margin: 0;
+	flex:1;
+}
 
 .nav_home ul li a{
-	padding-bottom: 50%;
+	padding-bottom: 20%;
 
 
+}
+.nav_derecha, .nav_izquierda, .nav_centro{
+    text-align: center;
+    
 }
 
 
 hr.inicio, hr.quien_soy, hr.portfolio, hr.servicios, hr.contacto, hr.servicios2{
-    width:120%;
+    width:60%;
+    margin:auto;
 }
 
 
@@ -79,5 +81,4 @@ a.icon-menu:before {
 
 .adentro_portfolio{
     background: lightblue;
-    
     width: 100%;
