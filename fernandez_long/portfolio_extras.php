@@ -26,6 +26,10 @@
 		$foto2=$_GET['foto2'];
 		$foto3=$_GET['foto3'];
 		$foto4=$_GET['foto4'];
+		$foto5=$_GET['foto5'];
+		$foto6=$_GET['foto6'];
+		$foto7=$_GET['foto7'];
+		$foto8=$_GET['foto8'];
 		$tags=$_GET['tags'];
 			
 	?>
@@ -35,6 +39,10 @@
 		<img class="foto_extras" src="<?php echo $foto2; ?>">
 		<img class="foto_extras" src="<?php echo $foto3; ?>">
 		<img class="foto_extras" src="<?php echo $foto4; ?>">
+		<img class="foto_extras" src="<?php echo $foto5; ?>">
+		<img class="foto_extras" src="<?php echo $foto6; ?>">
+		<img class="foto_extras" src="<?php echo $foto7; ?>">
+		<img class="foto_extras" src="<?php echo $foto8; ?>">
 		<div class="extras_palabras">
 			<p class="nombre_extras"><?php echo $nombre; ?></p>
 			<p class="descripcion_extras"><?php echo $descripcion; ?></p>

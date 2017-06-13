@@ -170,6 +170,9 @@ hr{
 
 
 
+
+
+
 /*INICIO HOME*/
 
 
@@ -272,7 +275,7 @@ hr.servicios2{
 .frase{
     color: white;
     font-weight: 400;
-    padding-top: 50%;
+    padding-top: 45%;
     margin-bottom: 7%;
     visibility: hidden;
 }
@@ -314,6 +317,11 @@ hr.servicios2{
 
 
 /*FIN HOME*/
+
+
+
+
+
 
 
 
@@ -585,23 +593,24 @@ video::-webkit-media-controls {
 
 
 /*INICIO PORTFOLIO*/
-.adentro_portfolio{
-    height: 30%;
-    width: 100%;
-     padding-top: 15%;
-   margin: auto;
-}
+
 
 .contenido_portfolio{
     width:100%;
     height: 100%;
+    padding-top: 5%;
     background: var(--fucsia);
     -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.50);
     -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.50);
     box-shadow:0px 0px 15px 3px rgba(0,0,0,0.50);    
 }
 
-
+.adentro_portfolio{
+    height: 30%;
+    width: 100%;
+     padding-top: 10%;
+   margin: auto;
+}
 
 .circulo{
     height: 6.9em;
@@ -633,6 +642,144 @@ li.circulo a{
     -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
     filter: grayscale(0%);
 }
+
+.portfolio a{
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+#filters {
+    list-style:none;
+  margin-left: -3%;
+}
+
+    #filters li {
+        float:left;
+
+    }
+    
+    #filters li span {
+        display: block;
+        text-decoration:none;
+        color:white;
+
+        cursor: pointer;
+    }
+    
+    #filters li span.active {
+        color:white;
+        font-weight: 700;
+    }
+ 
+#portfoliolist {
+ 
+  height: 50%;
+}
+ 
+#portfoliolist .portfolio {
+    /*margin:1%;*/
+    display:none;
+    float:left;
+    overflow:hidden;
+}
+
+.item{
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    width: 20%;
+    height: 4em;
+    background: #444;
+    margin-right: 6.6%;
+    margin-bottom: 3%;
+    display: inline-block;
+}
+.item h3 { 
+    font-weight: 300;
+    color: white;
+    line-height:1em;
+    visibility: hidden;
+    font-size: 1.2em;
+    text-align: center;
+
+}
+.item4{
+  margin-right: 0;
+}
+div.lact{
+  background: url(../img/portfolio/lactum-chico.png) no-repeat center;
+  background-size:cover;
+}
+div.camino{
+  background: url(../img/portfolio/camino-chico.png) no-repeat center;
+  background-size:cover;
+}
+
+div.canada{
+  background: url(../img/portfolio/canada-chico.png) no-repeat center;
+  background-size:cover;
+}
+div.zenitram{
+  background: url(../img/portfolio/zenitram-chico.png) no-repeat center;
+  background-size:cover;
+}
+div.grito{
+  background: url(../img/portfolio/grito-chico.png) no-repeat center;
+  background-size:cover;
+}
+div.polina{
+  background: url(../img/portfolio/polina-chico.png) no-repeat center;
+  background-size:cover;
+}
+div.tvp{
+  background: url(../img/portfolio/tvp-chico.png) no-repeat center;
+  background-size:cover;
+}
+div.ilus{
+  background: url(../img/portfolio/ilus-chico.png) no-repeat center;
+  background-size:cover;
+}
+div.fotografias{
+  background: url(../img/portfolio/fotografia-chico.png) no-repeat center;
+  background-size:cover;
+}
+div.afiches{
+  background: url(../img/portfolio/afiches-chico.png) no-repeat center;
+  background-size:cover;
+}
+.item:hover {
+   background: #444;
+
+}
+.item:hover h3 {
+    visibility: visible;
+}
+/* #Clearing */
+
+/* Self Clearing Goodness */
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+.row:after {
+  clear: both; }
+.row,
+{
+  zoom: 1; }
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+
 
 
 /*FIN PORTFOLIO*/
