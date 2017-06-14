@@ -92,7 +92,7 @@
 				 	    	<h3>Cañada - Ver más</h3>
 				    </div>
 				</a>
-			    <a href="portfolio_extras.php?nombre=Zenitram&tipo=Branding y piezas gráficas&tags=Branding, logos, identidad, piezas promocionales, producción analógica.&descripcion=Realizado en ambiente universitario, este trabajo partió de la película homónima, de la cual se tomaron los conceptos de choque, luces, devastación y efectos alucinógenos provocados por la ingesta de estupefacientes para crear una marca que contara resumidamente la historia del film. Se realizaron 3 paneles cuadrados que nacieron de distintas escenas claves, un afiche cinematográfico de gran escala,  un libro informativo y un video con los títulos de la pieza hecho con stop motion .&foto=&foto2=&foto3=&foto4=" title="">
+			    <a href="portfolio_extras.php?nombre=Zenitram&tipo=Branding y piezas gráficas&tags=Branding, logos, identidad, piezas promocionales, producción analógica.&descripcion=Realizado en ambiente universitario, este trabajo partió de la película homónima, de la cual se tomaron los conceptos de choque, luces, devastación y efectos alucinógenos provocados por la ingesta de estupefacientes para crear una marca que contara resumidamente la historia del film. Se realizaron 3 paneles cuadrados que nacieron de distintas escenas claves, un afiche cinematográfico de gran escala, un libro informativo y un video con los títulos de la pieza hecho con stop motion .&foto=img/portfolio/zenitram/zenitram1.png&foto=img/portfolio/zenitram/zenitram2.png&foto3=&foto4=&foto5=&foto6=&foto7=&foto8=" title="">
 				    <div class="portfolio item  branding item4 zenitram"  data-cat="branding">
 				 	      <h3>Zenitram - Ver más</h3>
 				    </div>
@@ -112,12 +112,12 @@
 				     		<h3>Grito! - Ver más</h3>
 				    </div>
 				</a>
-			    <a href="portfolio_extras.php?nombre=Camino de los Jesuitas&tipo=Branding y diseño editoriales&tags=Branding, marcas, identidad, piezas promocionales, producción analógica, videos.&descripcion=Camino de los Jesuitas tiene como función brindar un recorrido turístico de tipo histórico a personas que deseen conocer la historia de la comunidad jesuítica en el sector que abarca el sur de Paraguay, la provincia de Misiones en Argentina, y una pequeña zona de Brasil. Los principales conceptos de la marca fueron la cruz y los caminos, que se muestran con el estiramiento exagerado de los caracteres, y el desgaste en el cual se encuentran las distintas Ruinas. Luego se pasó a diseñar un panel informativo y un afiche promocional de 50x70cm,  una guía informativa junto con un sistema de 3 postales y un video promocional de corta duración .&foto=img/portfolio/camino/camino1.png&foto2=img/portfolio/camino/camino2.png&foto3=img/portfolio/camino/camino3.png&foto4=img/portfolio/camino/camino4.png" title="">
+			    <a href="portfolio_extras.php?nombre=Camino de los Jesuitas&tipo=Branding y diseño editoriales&tags=Branding, marcas, identidad, piezas promocionales, producción analógica, videos.&descripcion=Camino de los Jesuitas tiene como función brindar un recorrido turístico de tipo histórico a personas que deseen conocer la historia de la comunidad jesuítica en el sector que abarca el sur de Paraguay, la provincia de Misiones en Argentina, y una pequeña zona de Brasil. Los principales conceptos de la marca fueron la cruz y los caminos, que se muestran con el estiramiento exagerado de los caracteres, y el desgaste en el cual se encuentran las distintas Ruinas. Luego se pasó a diseñar un panel informativo y un afiche promocional de 50x70cm,  una guía informativa junto con un sistema de 3 postales y un video promocional de corta duración .&foto=img/portfolio/camino/camino1.png&foto2=img/portfolio/camino/camino2.png&foto3=img/portfolio/camino/camino3.png&foto4=img/portfolio/camino/camino4.png&foto5=img/portfolio/camino/camino5.png&foto6=img/portfolio/camino/camino6.png&foto7=img/portfolio/camino/camino7.png&foto8=img/portfolio/camino/camino8.png" title="">
 			    	<div class="portfolio item  editorial item4 camino" data-cat="editorial">
 			       		<h3>Camino de los...</h3>
 				    </div>
 			    </a>
-			    <a href="portfolio_extras.php?nombre=Televisión Pública&tipo=Branding e identidad corporativa&tags=Branding, logos, identidad, papelería, piezas varias, videos.&descripcion=Este trabajo universitario tuvo como principales conceptos la emisión generada por una señal televisiva y lo público. Se creó toda una identidad formada por distintas piezas de papelería, gráfica vehicular, el diseño de una página web y una aplicación móvil, y un corto video temático.&foto=&foto2=&foto3=&foto4=" title="">
+			    <a href="portfolio_extras.php?nombre=Televisión Pública&tipo=Branding e identidad corporativa&tags=Branding, logos, identidad, papelería, piezas varias, videos.&descripcion=Este trabajo universitario tuvo como principales conceptos la emisión generada por una señal televisiva y lo público. Se creó toda una identidad formada por distintas piezas de papelería, gráfica vehicular, el diseño de una página web y una aplicación móvil, y un corto video temático.&foto=img/portfolio/tvp/tvp1.png&foto2=img/portfolio/tvp/tvp2.png&foto3=img/portfolio/tvp/tvp3.png&foto4=img/portfolio/tvp/tvp4.png&foto5=&foto6=&foto7=&foto8=" title="">
 					<div class="portfolio item  webotros tvp" data-cat="webotros">
 					     <h3>TVP - Ver más</h3>
 				    </div>
@@ -127,7 +127,7 @@
 					    	<h3>Fotografías</h3>
 					</div>
 				</a>
-				<a href="portfolio_extras.php?nombre=&tipo=Afiches de distintas temáticas&tags=&descripcion=...&foto=&foto2=&foto3=&foto4=" title="">
+				<a href="portfolio_extras.php?nombre=Afiches&tipo=Afiches de distintas temáticas&tags=Gráfica, Afiche, Cartel, Poster&descripcion=&foto=img/portfolio/afiches/afiches1.png&foto2=img/portfolio/afiches/afiches2.png&foto3=&foto4=&foto5=&foto6=&foto7=&foto8=" title="">
 				    <div class="portfolio item webotros afiches" data-cat="webotros">
 					   		 <h3>Afiches - Ver más</h3>
 				    </div>
