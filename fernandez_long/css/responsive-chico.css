@@ -9,15 +9,41 @@
   font-style: normal;
 }
 
-.logo_chico{
-	margin-top: 20%;
-}
 
 
 
-.fondo_inicio.frase{
+
+
+
+.fondo_inicio:hover .frase{
 	visibility: hidden;
 }
+.fondo_inicio:hover .nav_home{
+	visibility: visible;
+}
+
+.fondo_inicio:hover .logo_chico{
+	width: 15%;
+	margin:15%-10%;
+	position: absolute;
+   animation: scale 0.95s infinite ease-out;
+    transform-origin: center;
+}
+
+.logo_chico{
+	background-color: lightgray;
+    width: 15%;
+    -webkit-transition: all 0.5s;
+    moz-webkit-transition:all 0.5s;
+    o-webkit-transition:all 0.5s;
+    margin:15% -10%;
+    animation-play-state: paused;
+}
+
+.nav_home{
+    visibility: visible; 
+}
+
 #home_responsive{
 	width: 90%;
 }
@@ -25,7 +51,6 @@
 	margin-top:-30% ;
 	text-align: center;
 	padding-left: 30%;
-	background: red;
 }
 .nav_home ul{
 	display: list-item;
@@ -58,9 +83,7 @@ hr.inicio, hr.quien_soy, hr.portfolio, hr.servicios, hr.contacto, hr.servicios2{
 /* NAV SITIO*/
 
 h1{
-	float: left;
-	margin-left: 5%;
-	font-size: 2em;
+	visibility: hidden;
 }
 
 .nav_sitio{
@@ -78,7 +101,26 @@ a.icon-menu:before {
  
 }
 
+.logo_nav{
+	visibility: visible;
+	float: left;
+	max-height: 5%;
+}
+
+
+
+
 
 .adentro_portfolio{
-    background: lightblue;
+    background: lightgray;
     width: 100%;
+}
+
+
+
+
+
+/*INICIO CONTACTO*/
+.contenido_contacto{
+    background: lightblue;
+}

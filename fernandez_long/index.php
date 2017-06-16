@@ -256,18 +256,20 @@
 				</section>
 		
 		</div>
-
+	<section class="blanco">
+		
+	</section>
 	<a name="contacto">
 	</a>
-		<div class="contenido_contacto contacto">
+		<div class="contenido_contacto">
 		
 			<center>
 				<div class="formulario">
 					<h2 id="contacto">Contacto</h2>
-					<form action="mailto:luisina.fl@hotmail.com?" method="post" name="formulario" id="section_formulario">
+					<form action="form_procesador.php" method="post" name="formulario" id="section_formulario">
 						<p>
 							<label for="Nombre">Nombre y apellido: <br></label> 
-							<input name="Nombre" type="text" required class="campos">
+							<input name="nombre" type="text" required class="campos">
 						</p>
 						<p>
 							<label for="email">Mail:<br></label>
@@ -276,7 +278,7 @@
 
 						<p>
 							<label for="Pais">País:<br></label>
-							<select name="Pais" class="campos" id="pais">
+							<select name="pais" class="campos" id="pais" placeholder="Elige un país">
 								<option>Argentina</option>
 								<option>Brasil</option>
 								<option>Bolivia</option>
@@ -293,7 +295,7 @@
 						</p>
 						<p>
 							<label for="comentarios">Comentarios:<br></label></td>
-							<textarea name="comentarios" id="comentarios" placeholder="Escribime tu comentario..."></textarea></td>
+							<textarea name="comentarios" id="comentarios" placeholder="Escribe tu comentario..."></textarea></td>
 						</p>
 						<input type="submit" value="Enviar" class="boton1" />
 						<input type="submit" value="Restablecer" class="boton2" />
