@@ -1,8 +1,8 @@
 <div class="header">
-	<a href="icon-menu" title=""></a>
+	<div class="logo_nav"><a href="#" ></a></div>
 	<div class="nav">
 		<h1>Luisina Fernández Long</h1>
-		<img src="../img/logo-01.png" alt="logo" class="logo_nav" /><!-- este mi logo -->
+		
 		<nav class="nav_sitio">
 
 			<ul>

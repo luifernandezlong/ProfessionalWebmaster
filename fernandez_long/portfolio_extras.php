@@ -18,42 +18,86 @@
 		include('inc/nav_sitio.php');
 	?>
 	<?php
-
-		$nombre=$_GET['nombre'];
-		$tipo=$_GET['tipo'];
-		$descripcion=$_GET['descripcion'];	
-		$foto=$_GET['foto'];
-		$foto2=$_GET['foto2'];
-		$foto3=$_GET['foto3'];
-		$foto4=$_GET['foto4'];
-		$foto5=$_GET['foto5'];
-		$foto6=$_GET['foto6'];
-		$foto7=$_GET['foto7'];
-		$foto8=$_GET['foto8'];
-		$tags=$_GET['tags'];
+		$id=$_GET['id'];
+		// $nombre=$_GET['nombre'];
+		// $tipo=$_GET['tipo'];
+		// $descripcion=$_GET['descripcion'];	
+		// $foto=$_GET['foto'];
+		// $foto2=$_GET['foto2'];
+		// $foto3=$_GET['foto3'];
+		// $foto4=$_GET['foto4'];
+		// $foto5=$_GET['foto5'];
+		// $foto6=$_GET['foto6'];
+		// $foto7=$_GET['foto7'];
+		// $foto8=$_GET['foto8'];
+		// $tags=$_GET['tags'];
 			
 	?>
 
 	<div class="extras_adentro">
-		<img class="foto_extras" src="<?php echo $foto; ?>">
-		<img class="foto_extras" src="<?php echo $foto2; ?>">
-		<img class="foto_extras" src="<?php echo $foto3; ?>">
-		<img class="foto_extras" src="<?php echo $foto4; ?>">
-		<img class="foto_extras" src="<?php echo $foto5; ?>">
-		<img class="foto_extras" src="<?php echo $foto6; ?>">
-		<img class="foto_extras" src="<?php echo $foto7; ?>">
-		<img class="foto_extras" src="<?php echo $foto8; ?>">
 		<div class="extras_palabras">
-			<p class="nombre_extras"><?php echo $nombre; ?></p>
-			<p class="descripcion_extras"><?php echo $descripcion; ?></p>
-			<h3 class="tipo_extras">CATEGORÍA</h3>
-				<p class="otros_extras"><?php echo $tipo; ?></p>
-			<h3 class="tipo_extras">TAGS</h3>
-				<p class="tags_extras"><?php echo $tags; ?></p>
+			<?php
+				include('conectar.php');
+				$sql = "SELECT t.nombre, t.descripcion, t.tags, c.nombrecat FROM `trabajos` AS t JOIN `categorias` AS c ON t.idcategoria = c.idcategoria WHERE t.idtrabajos =".$id;
+				$result = $conexion->query($sql);
+				if ($result->num_rows > 0) {
+				    while($row = $result->fetch_assoc()) {
+				    	 echo '<p class="nombre_extras">'.utf8_encode($row['nombre']).'</p>
+				    	<p class="descripcion_extras">'.utf8_encode($row['descripcion']).'</p>
+						<h3 class="tipo_extras">CATEGORÍA</h3>
+							<p class="otros_extras">'.utf8_encode($row['nombrecat']).'</p>
+						<h3 class="tipo_extras">TAGS</h3>
+							<p class="tags_extras">'.utf8_encode($row['tags']).'</p>
+							';
+				
+				    }
+				} else{
+					echo 'hola';
+				}
+			 	$conexion->close();
+
+			?>
 		</div>
+
+		<div class="cycle-slideshow extras_fotos" data-cycle-fx="scrollHorz" data-cycle-timeout="2000">
 		
-		<a href="index.php #portfolio" class="volver">← Volver al portfolio</a>
+			<?php
+				include('conectar.php');
+				$sql="SELECT i.imagen FROM `trabajos` AS t JOIN `imagenes` AS i ON t.idtrabajos = i.idtrabajos WHERE t.idtrabajos =".$id;
+				$result = $conexion->query($sql);
+				if ($result->num_rows > 0) {
+					while($row = $result->fetch_assoc()) {
+					 	echo '<img src="'.$row['imagen'].'" class="foto_extras">';
+				 	}
+				}
+			 	$conexion->close();				
+			?> 
+		</div>
+
+
+			<a class="volver" href="index.php #portfolio">← Volver al portfolio</a>
+
 	</div>
 	
+
+
+
+
+	<script>
+	var images = [
+	    '<img src="http://malsup.github.io/images/p2.jpg">',
+	    '<img src="http://malsup.github.io/images/p3.jpg">',
+	    '<img src="http://malsup.github.io/images/p4.jpg">'
+	];
+
+	$('button').one('click', function() {
+	    for (var i=0; i < images.length; i++) {
+	        $('.cycle-slideshow').cycle('add', images[i]);
+	    }
+	    $(this).prop('disabled', true)
+	})
+	</script>
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/jquery.cycle2.js" type="text/javascript"></script>
 </body>
 </html>

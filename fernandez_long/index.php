@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="css/fernandez_long.css">
 	<link rel="stylesheet" href="css/responsive-chico.css" media="handheld, screen and (min-width:230px) and (max-width:768px)"/>  
 	<link rel="stylesheet" href="css/responsive-medio.css" media="handheld, screen and (min-width:769px) and (max-width:1370px)"/> 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/jquery.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
 	<script src="js/fernandezlong.js" type="text/javascript"></script>
 	<script>
@@ -68,76 +68,33 @@
 		<div class="holder">
 			<div class="adentro_portfolio">
 				<ul id="filters">
-
-					<li class="circulo"><span href="#portfolio" class="filter active serv4" data-filter=".branding, .editorial, .webotros">TODOS</span></li>
+					<li class="circulo"><span href="#portfolio" class="filter active serv4" data-filter=".branding, .editorial, .otros">TODOS</span></li>
 					<li class="circulo"><span href="#portfolio" class="filter serv1" data-filter=".branding"><a name="branding"></a>BRANDING</span></li>
 					<li class="circulo"><span href="#portfolio" class="filter serv2" data-filter=".editorial">EDITORIAL</span></li>
-					<li class="circulo"><span href="#portfolio" class="filter serv3" data-filter=".webotros">WEB Y OTROS</span></li>
+					<li class="circulo"><span href="#portfolio" class="filter serv3" data-filter=".otros">OTROS</span></li>
 				</ul>	
 			</div>
-						
 			<div id ="portfoliolist">	
-				<a href="portfolio_extras.php?nombre=Lactum&tipo=Identidad corporativa&tags=Branding, logos, identidad, papelería.&descripcion=El diseño fue realizado para Lactum, una empresa ficticia de productos lácteos. Comenzando por el logotipo basado en la simplificación del concepto de ubre como productor de lácteos, hasta llegar al punto donde se comprendiera el chiste tipográfico y el concepto en el mismo momento. Luego se prosiguió con la identidad corporativa, formada por una carpeta de tipo tríptico y papelería interna y externa.&foto=img/portfolio/lactum/lactum1.png&foto2=img/portfolio/lactum/lactum2.png&foto3=img/portfolio/lactum/lactum3.png&foto4=&foto5=&foto6=&foto7=&foto8=">    
-				    <div class="portfolio item branding lact" data-cat="branding">
-				    	<h3>Lactum - Ver más</h3>
-				    </div>
-				</a>
-			    <a href="portfolio_extras.php?nombre=Camino de los Jesuitas&tipo=Branding y diseño editoriales&tags=Branding, marcas, identidad, piezas promocionales, producción analógica, videos.&descripcion=Camino de los Jesuitas tiene como función brindar un recorrido turístico de tipo histórico a personas que deseen conocer la historia de la comunidad jesuítica en el sector que abarca el sur de Paraguay, la provincia de Misiones en Argentina, y una pequeña zona de Brasil. Los principales conceptos de la marca fueron la cruz y los caminos, que se muestran con el estiramiento exagerado de los caracteres, y el desgaste en el cual se encuentran las distintas Ruinas. Luego se pasó a diseñar un panel informativo y un afiche promocional de 50x70cm,  una guía informativa junto con un sistema de 3 postales y un video promocional de corta duración . &foto=img/portfolio/camino/camino1.png&foto2=img/portfolio/camino/camino2.png&foto3=img/portfolio/camino/camino3.png&foto4=img/portfolio/camino/camino4.png&foto6=img/portfolio/camino/camino6.png&foto5=img/portfolio/camino/camino5.png&foto7=img/portfolio/camino/camino7.png&foto8=img/portfolio/camino/camino8.png" title="">
-				    <div class="portfolio  item branding camino"  data-cat="branding">
-				    	<h3>Camino de los...</h3>
-				    </div>
-				</a>
-			    <a href="portfolio_extras.php?nombre=Camino de los Jesuitas&tipo=Branding y diseño editoriales&tags=Branding, logos, identidad, diseño editorial, diseño de diario.&descripcion=Se realizó el diseño integral de un periódico de la capital cordobesa, tomando como concepto un ícono de la ciudad que es el encauzamiento entre dos cuerpos de agua de la zona, que en la cultura popular es llamado Cañada.&foto=img/portfolio/canada/canada1.png&foto2=img/portfolio/canada/canada2.png&foto3=img/portfolio/canada/canada3.png&foto4=img/portfolio/canada/canada4.png&foto5=&foto6=&foto7=&foto8=">
-				    <div class="portfolio item  branding canada"  data-cat="branding">
-				 	    	<h3>Cañada - Ver más</h3>
-				    </div>
-				</a>
-			    <a href="portfolio_extras.php?nombre=Zenitram&tipo=Branding y piezas gráficas&tags=Branding, logos, identidad, piezas promocionales, producción analógica.&descripcion=Realizado en ambiente universitario, este trabajo partió de la película homónima, de la cual se tomaron los conceptos de choque, luces, devastación y efectos alucinógenos provocados por la ingesta de estupefacientes para crear una marca que contara resumidamente la historia del film. Se realizaron 3 paneles cuadrados que nacieron de distintas escenas claves, un afiche cinematográfico de gran escala, un libro informativo y un video con los títulos de la pieza hecho con stop motion .&foto=img/portfolio/zenitram/zenitram1.png&foto=img/portfolio/zenitram/zenitram2.png&foto3=&foto4=&foto5=&foto6=&foto7=&foto8=" title="">
-				    <div class="portfolio item  branding item4 zenitram"  data-cat="branding">
-				 	      <h3>Zenitram - Ver más</h3>
-				    </div>
-				</a>
-			     <a href="portfolio_extras.php?nombre=Cañada&tipo=Diseño editorial&tags=Branding, logos, identidad, diseño editorial, diseño de diario.&descripcion=Se realizó el diseño integral de un periódico de la capital cordobesa, tomando como concepto un ícono de la ciudad que es el encauzamiento entre dos cuerpos de agua de la zona, que en la cultura popular es llamado Cañada.&foto=img/portfolio/canada/canada1.png&foto2=img/portfolio/canada/canada2.png&foto3=img/portfolio/canada/canada3.png&foto4=img/portfolio/canada/canada4.png&foto5=&foto6=&foto7=&foto8=" title="">
-				    <div class="portfolio item  editorial canada"  data-cat="editorial">
-				 	      <h3>Cañada - Ver más</h3>
-				    </div>
-				</a>
-			    <a href="portfolio_extras.php?nombre=Polina Ivanova&tipo=Diseño editorial&tags=Diseño editorial, diseño de libro, producción analógica, edición fotográfica.&descripcion=Este libro, realizado sin fines comerciales, se basó en los dibujos de la artista Polina Ivanova, en los cuales suelen verse patrones y figuras humanas realizadas con distintas técnicas, muchas veces fusionadas de diversas maneras. La pieza fue realizada tanto de manera manual en caso de algunos dibujos, como con edición de los trabajos originales y la utilización de herramientas de diseño editorial como Adobe Indesign.&foto=img/portfolio/polina/polina2.png&foto2=img/portfolio/polina/polina3.png&foto3=img/portfolio/polina/polina4.png&foto4=img/portfolio/polina/polina5.png&foto5=img/portfolio/polina/polina6.png&foto6=&foto7=&foto8=" title="">
-				    <div class="portfolio item  editorial polina"  data-cat="editorial">
-				 	      <h3>Polina Ivanova</h3>
-				    </div>
-				</a>
-			    <a href="portfolio_extras.php?nombre=Grito!&tipo=Branding y Diseño editorial&tags=Branding, logos, diseño editorial, diseño de revista, producción analógica.&descripcion=El proyecto universitario consistió en el diseño en pareja del nombre, marca y estructura de una revista con la temática de arte urbano.&foto=img/portfolio/grito/grito1.png&foto2=img/portfolio/grito/grito3.png&foto3=img/portfolio/grito/grito5.png&foto4=img/portfolio/grito/grito6.png&foto5=img/portfolio/grito/grito2.png&foto6=img/portfolio/grito/grito4.png&foto7=&foto8=" title="">
-					<div class="portfolio item  editorial grito" data-cat="editorial">
-				     		<h3>Grito! - Ver más</h3>
-				    </div>
-				</a>
-			    <a href="portfolio_extras.php?nombre=Camino de los Jesuitas&tipo=Branding y diseño editoriales&tags=Branding, marcas, identidad, piezas promocionales, producción analógica, videos.&descripcion=Camino de los Jesuitas tiene como función brindar un recorrido turístico de tipo histórico a personas que deseen conocer la historia de la comunidad jesuítica en el sector que abarca el sur de Paraguay, la provincia de Misiones en Argentina, y una pequeña zona de Brasil. Los principales conceptos de la marca fueron la cruz y los caminos, que se muestran con el estiramiento exagerado de los caracteres, y el desgaste en el cual se encuentran las distintas Ruinas. Luego se pasó a diseñar un panel informativo y un afiche promocional de 50x70cm,  una guía informativa junto con un sistema de 3 postales y un video promocional de corta duración .&foto=img/portfolio/camino/camino1.png&foto2=img/portfolio/camino/camino2.png&foto3=img/portfolio/camino/camino3.png&foto4=img/portfolio/camino/camino4.png&foto5=img/portfolio/camino/camino5.png&foto6=img/portfolio/camino/camino6.png&foto7=img/portfolio/camino/camino7.png&foto8=img/portfolio/camino/camino8.png" title="">
-			    	<div class="portfolio item  editorial item4 camino" data-cat="editorial">
-			       		<h3>Camino de los...</h3>
-				    </div>
-			    </a>
-			    <a href="portfolio_extras.php?nombre=Televisión Pública&tipo=Branding e identidad corporativa&tags=Branding, logos, identidad, papelería, piezas varias, videos.&descripcion=Este trabajo universitario tuvo como principales conceptos la emisión generada por una señal televisiva y lo público. Se creó toda una identidad formada por distintas piezas de papelería, gráfica vehicular, el diseño de una página web y una aplicación móvil, y un corto video temático.&foto=img/portfolio/tvp/tvp1.png&foto2=img/portfolio/tvp/tvp2.png&foto3=img/portfolio/tvp/tvp3.png&foto4=img/portfolio/tvp/tvp4.png&foto5=&foto6=&foto7=&foto8=" title="">
-					<div class="portfolio item  webotros tvp" data-cat="webotros">
-					     <h3>TVP - Ver más</h3>
-				    </div>
-				</a>
-			    <a href="portfolio_extras.php?nombre=Ilustraciones&tipo=Fotografía y edición&tags=&descripcion=¡Acá presento algunas de mis ilustraciones! Todas fueron realizadas de manera libre con distintos conceptos que imaginé.&foto=&foto2=&foto3=&foto4=" title="">
-				    <div class="portfolio item  webotros fotografias" data-cat="webotros">
-					    	<h3>Fotografías</h3>
-					</div>
-				</a>
-				<a href="portfolio_extras.php?nombre=Afiches&tipo=Afiches de distintas temáticas&tags=Gráfica, Afiche, Cartel, Poster&descripcion=&foto=img/portfolio/afiches/afiches1.png&foto2=img/portfolio/afiches/afiches2.png&foto3=&foto4=&foto5=&foto6=&foto7=&foto8=" title="">
-				    <div class="portfolio item webotros afiches" data-cat="webotros">
-					   		 <h3>Afiches - Ver más</h3>
-				    </div>
-				</a>
-			    <a href="portfolio_extras.php?nombre=&tipo=Fotografías de distintas temáticas&tags=&descripcion=...&foto=&foto2=&foto3=&foto4=" title="">
-				    <div class="portfolio  item webotros item4 ilus" data-cat="webotros">
-					     <h3>¡Mis ilustraciones!</h3>
-				    </div>
-			    </a>	    
-			</div> 
+				<?php
+					include('conectar.php');
+					$sql = "SELECT t.idtrabajos,t.nombre,t.logo,c.nombrecat FROM `trabajos` AS t JOIN `categorias` AS c ON t.idcategoria=c.idcategoria";
+					$result = $conexion->query($sql);
+
+					if ($result->num_rows > 0) {
+					    while($row = $result->fetch_assoc()) {
+					    	 echo '<a href="portfolio_extras.php?id='.$row['idtrabajos'].'">
+					    	 	<div class="portfolio item '.strtolower($row['nombrecat']).'" data-cat="'.strtolower($row['nombrecat']).'" style="background:url('.$row['logo'].') no-repeat center blue;background-size:cover"> '
+					 	    	."<h3>".$row['nombre'].' - Ver más</h3></div></a>';
+					
+					    }
+					} else{
+						echo 'hola';
+					}
+
+					$conexion->close();
+					?> 
+				</div>
+
 		</div>
 	</section>
 
@@ -311,10 +268,10 @@
 		<div class="botones_footer">
 			
 			
-			<a class="boton_footer icon-celular">(+54) 15 2645- 5369</a>
+			<a class="boton_footer btn_der icon-celular">(+54) 15 2645- 5369</a>
 			<a href="https://www.behance.net/luisinafl" target="_blank" class="boton_footer icon-behance">/luisinafl</a>
 			<a href="https://www.linkedin.com/in/luisinafl-disenadora/" class="boton_footer icon-linkedin" target="_blank">/luisinafl-disenadora</a>
-			<a href="https://github.com/luifernandezlong" class="boton_footer icon-github" target="_blank">/luifernandezlong</a>
+			<a href="https://github.com/luifernandezlong" class="boton_footer btn_der icon-github" target="_blank">/luifernandezlong</a>
 		</div>
 		<br>
 		<span class="copyright">© Luisina Fernández Long 2017</span>

@@ -7,7 +7,7 @@
   max-width: 960px;
   margin:0 auto;
   margin-top: 8%;
-  background: lightgray;
+  background: red;
 }
 
 .extras_palabras{
@@ -16,12 +16,14 @@
   margin:0;
 }
 
-.foto_extras{
+.extras_fotos{
+  margin-top: 3%;
   float: right;
   max-width: 65%;
-  margin-bottom: 3%;
 }
-
+.foto_extras{
+  max-width: 100%;
+}
 .descripcion_extras{
   font-size: 1em;
   color: gray;
@@ -60,12 +62,21 @@
   }
 
 .volver{
-  color: var(--fucsia);
+  color:var(--fucsia);
+  /*color: black;*/
   text-decoration: none;
   font-size: 0.8em;
   float: left;
   margin-top: 3%;
   clear: both;
+}
+
+
+@media screen and (max-width:1366px){
+    .extras_adentro{
+      max-width: 900px;
+      background-color: red;
+    }
 }
 @media screen and (max-width:960px){
     .extras_adentro{
@@ -98,3 +109,4 @@
       float: none;
     }
 }
+

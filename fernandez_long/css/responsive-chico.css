@@ -1,18 +1,7 @@
-@font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?nlkp13');
-  src:  url('fonts/icomoon.eot?nlkp13#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?nlkp13') format('truetype'),
-    url('fonts/icomoon.woff?nlkp13') format('woff'),
-    url('fonts/icomoon.svg?nlkp13#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
+:root {
+  --fucsia: #f4989e;
+  --naranja: #f7955a;
 }
-
-
-
-
-
 
 
 .fondo_inicio:hover .frase{
@@ -31,7 +20,6 @@
 }
 
 .logo_chico{
-	background-color: lightgray;
     width: 15%;
     -webkit-transition: all 0.5s;
     moz-webkit-transition:all 0.5s;
@@ -74,49 +62,83 @@
 }
 
 
-hr.inicio, hr.quien_soy, hr.portfolio, hr.servicios, hr.contacto, hr.servicios2{
-    width:60%;
+ hr.quien_soy, hr.portfolio, hr.servicios, hr.contacto{
+    visibility: visible;
+    width:40%;
     margin:auto;
 }
 
 
 /* NAV SITIO*/
 
-h1{
-	visibility: hidden;
-}
 
-.nav_sitio{
-	visibility: hidden;
-}
-
-a.icon-menu{
-	opacity: 1;
-	 font-family: 'icomoon';
-  float:right;
-  padding-right: 5%;
-}
-a.icon-menu:before {
-  content: "\e900";
- 
-}
 
 .logo_nav{
+ 
+  background: url(../img/favicon-03.png) no-repeat center;
+  background-size:10%; 
 	visibility: visible;
-	float: left;
-	max-height: 5%;
+  padding-bottom: -5em;
+   width: 100%;
+  height: 4em;
+}
+.logo_navchico{
+}
+.nav_sitio{
+  margin-top: -5em;
+}
+.nav_sitio ul li a{
+  font-size: 0.1em;
+  visibility: hidden;
+}
+.nav h1{
+  font-size: 0.01em;
+  visibility: hidden;
 }
 
 
 
 
 
+
+/*INICIO PORTFOLIO*/
+
+.contenido_portfolio{
+
+    height: 200%;
+    background: var(--fucsia);
+}
 .adentro_portfolio{
-    background: lightgray;
-    width: 100%;
+  width: 90%;
+  margin: auto;
+  height: 10%;
+  padding-top: 10%;
 }
 
+.serv1,.serv2,.serv3,.serv4{
+  background: none;
+}
+.circulo{
+  width: 6em;  
+  height: 1.2em;
+  font-size: 1em;
+  line-height: 1em;
+  
+}
+.item{
+  width: 40%;
+  height: 3em;
+}
+.item:hover h3 { 
+  visibility: hidden;
+}
 
+#portfoliolist {
+  width: 80%;
+  margin-left: 15%;
+  clear: both;
+  background: red;
+}
 
 
 
