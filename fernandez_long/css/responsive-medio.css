@@ -76,6 +76,9 @@ hr.servicios2{
 
 
 /*QUIEN SOY*/
+.contenido_qs{
+    padding: 0;
+}
 
 .dibujoentero{
     margin-top: 8.5%;
@@ -98,16 +101,16 @@ h3.titulo_qs{
     padding: 0;
 }
 .botones{
-}
-.botoncontactame{
-   
-}
-a.contactame{
-    
+    margin-left: 33%;
+    width: auto;
+    height: auto;
 }
 .botoncv{
-    margin-top: 3%;
-    
+    margin-top: 4%;
+    position: relative;
+}
+.botoncontactame{
+    position: relative;
 }
 
 
@@ -197,7 +200,7 @@ a.contactame{
 
 /*INICIO CONTACTO*/
 .contenido_contacto{
-    margin-bottom: 2%;
+    margin-bottom: 6%;
     margin-top: 10%;}
 
 #comentarios{

@@ -1,5 +1,5 @@
 <div class="header">
-	<div class="logo_nav"><a href="#" ></a></div>
+	<a href="index.php #home" class="logo_nav"><center><img src="img/favicon-03.png" class="img_logochico"></center></a>
 	<div class="nav">
 		<h1>Luisina Fernández Long</h1>
 		

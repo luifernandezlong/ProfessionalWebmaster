@@ -19,22 +19,23 @@
 	?>
 	<?php
 		$id=$_GET['id'];
-		// $nombre=$_GET['nombre'];
-		// $tipo=$_GET['tipo'];
-		// $descripcion=$_GET['descripcion'];	
-		// $foto=$_GET['foto'];
-		// $foto2=$_GET['foto2'];
-		// $foto3=$_GET['foto3'];
-		// $foto4=$_GET['foto4'];
-		// $foto5=$_GET['foto5'];
-		// $foto6=$_GET['foto6'];
-		// $foto7=$_GET['foto7'];
-		// $foto8=$_GET['foto8'];
-		// $tags=$_GET['tags'];
-			
 	?>
 
 	<div class="extras_adentro">
+		<div class="cycle-slideshow extras_fotos" data-cycle-fx="scrollHorz" data-cycle-timeout="2000">
+		
+			<?php
+				include('conectar.php');
+				$sql="SELECT i.imagen FROM `trabajos` AS t JOIN `imagenes` AS i ON t.idtrabajos = i.idtrabajos WHERE t.idtrabajos =".$conexion->real_escape_string($id);
+				$result = $conexion->query($sql);
+				if ($result->num_rows > 0) {
+					while($row = $result->fetch_assoc()) {
+					 	echo '<img src="'.$row['imagen'].'" class="foto_extras">';
+				 	}
+				}
+			 	$conexion->close();				
+			?> 
+		</div>
 		<div class="extras_palabras">
 			<?php
 				include('conectar.php');
@@ -52,27 +53,14 @@
 				
 				    }
 				} else{
-					echo 'hola';
+					echo 'Ha ocurrido un error, por favor recargue el sitio.';
 				}
 			 	$conexion->close();
 
 			?>
 		</div>
 
-		<div class="cycle-slideshow extras_fotos" data-cycle-fx="scrollHorz" data-cycle-timeout="2000">
 		
-			<?php
-				include('conectar.php');
-				$sql="SELECT i.imagen FROM `trabajos` AS t JOIN `imagenes` AS i ON t.idtrabajos = i.idtrabajos WHERE t.idtrabajos =".$id;
-				$result = $conexion->query($sql);
-				if ($result->num_rows > 0) {
-					while($row = $result->fetch_assoc()) {
-					 	echo '<img src="'.$row['imagen'].'" class="foto_extras">';
-				 	}
-				}
-			 	$conexion->close();				
-			?> 
-		</div>
 
 
 			<a class="volver" href="index.php #portfolio">← Volver al portfolio</a>

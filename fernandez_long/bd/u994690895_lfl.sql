@@ -1,11 +1,12 @@
+
 -- phpMyAdmin SQL Dump
--- version 3.5.1
+-- version 3.5.2.2
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 01-07-2017 a las 07:56:58
--- Versión del servidor: 5.5.24-log
--- Versión de PHP: 5.4.3
+-- Tiempo de generación: 11-07-2017 a las 05:39:38
+-- Versión del servidor: 10.1.24-MariaDB
+-- Versión de PHP: 5.2.17
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de datos: `fernandez_long`
+-- Base de datos: `u994690895_lfl`
 --
 
 -- --------------------------------------------------------
@@ -30,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `categorias` (
   `idcategoria` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `nombrecat` varchar(255) NOT NULL,
   PRIMARY KEY (`idcategoria`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
 -- Volcado de datos para la tabla `categorias`
@@ -54,7 +55,7 @@ CREATE TABLE IF NOT EXISTS `fernandez_long` (
   `pais` varchar(255) NOT NULL,
   `comentario` text NOT NULL,
   PRIMARY KEY (`idcomentario`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
 
 --
 -- Volcado de datos para la tabla `fernandez_long`
@@ -78,7 +79,7 @@ CREATE TABLE IF NOT EXISTS `imagenes` (
   `imagen` varchar(255) NOT NULL,
   `idtrabajos` varchar(255) NOT NULL,
   PRIMARY KEY (`idimagenes`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=58 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=58 ;
 
 --
 -- Volcado de datos para la tabla `imagenes`
@@ -157,7 +158,7 @@ CREATE TABLE IF NOT EXISTS `trabajos` (
   `idcategoria` int(11) NOT NULL,
   `logo` varchar(255) NOT NULL,
   PRIMARY KEY (`idtrabajos`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
 
 --
 -- Volcado de datos para la tabla `trabajos`

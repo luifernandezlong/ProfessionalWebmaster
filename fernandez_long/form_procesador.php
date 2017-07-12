@@ -16,8 +16,19 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
 	<script src="js/fernandezlong.js" type="text/javascript"></script>	
+	// <script>
+	// 	function myFunction() {
+	// 		var x = document.getElementById("snackbar")
+	// 		x.className = "show";
+	// 		setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+	// 	}
+	// </script>
 </head>
 <body class="contacto">
+
+	<?php
+		include('inc/nav_sitio.php');
+	?>
 		<a name="contacto">
 	</a>
 		<div class="contenido_contacto contacto">
@@ -57,17 +68,20 @@
 
 			echo 'Tu mensaje se ha enviado correctamente'
 
+				// <button onclick="myFunction()">Show Snackbar</button>
+
+				// <div id="snackbar">Tu mensaje se ha enviado correctamente</div>
 
 			?>
 	<footer>
 		<span class="sp_foot">¿Queres otra forma para contactarme?</span><br>
 		<div class="botones_footer">
 			
-			
-			<a class="boton_footer icon-celular">(+54) 15 2645- 5369</a>
-			<a href="https://www.behance.net/luisinafl" target="_blank" class="boton_footer icon-behance">/luisinafl</a>
-			<a href="https://www.linkedin.com/in/luisinafl-disenadora/" class="boton_footer icon-linkedin" target="_blank">/luisinafl-disenadora</a>
-			<a href="https://github.com/luifernandezlong" class="boton_footer icon-github" target="_blank">/luifernandezlong</a>
+				
+			<a class="boton_footer"><img src="img/Layout sitio-25.png" alt="Mail"> luisina.fl@hotmail.com</a>
+			<a href="https://www.behance.net/luisinafl" target="_blank" class="boton_footer"><img src="img/Layout sitio-24.png" alt="Behance"> /luisinafl</a>
+			<a href="https://www.linkedin.com/in/luisinafl-disenadora/" class="boton_footer" target="_blank"><img src="img/Layout sitio-23.png" alt="LinkedIn"> /luisinafl-disenadora</a>
+			<a href="https://github.com/luifernandezlong" class="boton_footer" target="_blank"><img src="img/Layout sitio-22.png" alt="GitHub"> /luifernandezlong</a>
 		</div>
 		<br>
 		<span class="copyright">© Luisina Fernández Long 2017</span>
