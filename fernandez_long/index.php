@@ -85,7 +85,7 @@ include('inc/nav_sitio.php');
 			if ($result->num_rows > 0) {
 				while($row = $result->fetch_assoc()) {
 					echo '<a href="portfolio_extras.php?id='.$row['idtrabajos'].'">
-					<div class="portfolio item '.strtolower($row['nombrecat']).'" data-cat="'.strtolower($row['nombrecat']).'" style="background:url('.$row['logo'].') no-repeat center blue;background-size:cover"> '
+					<div class="portfolio item '.strtolower($row['nombrecat']).'" data-cat="'.strtolower($row['nombrecat']).'" style="background:url('.$row['logo'].') no-repeat center;background-size:cover"> '
 					."<h3>".utf8_encode($row['nombre']).' - Ver más</h3></div></a>';
 					
 				}
@@ -121,7 +121,7 @@ include('inc/nav_sitio.php');
 					</div>	
 				</div>
 				<div class="botoncv">
-					<a href="#" title="" class="cv">¿Querés ver mi CV?</a>
+					<a href="DGLuisinaFLong.pdf" class="cv">¿Querés ver mi CV?</a>
 					<div class="fondo_botoncv">
 						<div class="boton_circulo2"></div>
 					</div>
@@ -182,6 +182,7 @@ include('inc/nav_sitio.php');
 				</ul>
 			</div>		
 		</div>
+		<div class="software_entero">
 			<div class="descripcion_servicios soft">
 				<h1 class="servs">SOFTWARE</h1>
 				<h2>¡Las herramientas! Te presento mis aptitudes con distintas tecnologías tanto de diseño gráfico, como de programación web y edición de video.</h2>
@@ -189,143 +190,14 @@ include('inc/nav_sitio.php');
 
 
 			<div class="software">			
-	<!-- 				<div class="programa">
-						<div id="activeBorder" class="active-border">
-							<div id="circle" class="circle">
-								<span class="prec 320" id="prec">Ps</span>
-							</div>
-						</div>
-						<span class="nombre_programa"> Photoshop</span>
-					</div>
-					<div class="programa">
-						<div id="activeBorder" class="active-border">
-							<div id="circle" class="circle">
-								<span class="prec 340" id="prec">Ai</span>
-							</div>
-						</div>
-						<span class="nombre_programa"> Illustrator</span>
-					</div>
-					<div class="programa">
-						<div id="activeBorder" class="active-border">
-							<div id="circle" class="circle">
-								<span class="prec 270" id="prec">Id</span>
-							</div>
-						</div>
-						<span class="nombre_programa"> InDesign</span>
-					</div>
-					<div class="programa">
-						<div id="activeBorder" class="active-border">
-							<div id="circle" class="circle">
-								<span class="prec 100" id="prec">Pr</span>
-							</div>
-						</div>
-						<span class="nombre_programa"> Premiere</span>
-					</div>
-					<div class="programa">
-						<div id="activeBorder" class="active-border">
-							<div id="circle" class="circle">
-								<span class="prec 320" id="prec">Ae</span>
-							</div>
-						</div>
-						<span class="nombre_programa">After Effects</span>
-					</div>
-					<div class="programa">
-							<div id="activeBorder" class="active-border">
-								<div id="circle" class="circle">
-									<span class="prec 320" id="prec">Dw</span>
-								</div>
-							</div>
-							<span class="nombre_programa">Dreamweaver</span>
-						</div>
-						<div class="programa">
-							<div id="activeBorder" class="active-border">
-								<div id="circle" class="circle">
-									<span class="prec 320" id="prec">S</span>
-								</div>
-							</div>
-							<span class="nombre_programa">Sublime</span>
-						</div>
-						<div class="programa">
-							<div id="activeBorder" class="active-border">
-								<div id="circle" class="circle">
-									<span class="prec 320" id="prec">GH</span>
-								</div>
-							</div>
-							<span class="nombre_programa">GitHub</span>
-						</div>
-						<div class="programa">
-							<div id="activeBorder" class="active-border">
-								<div id="circle" class="circle">
-									<span class="prec 320" id="prec">Html</span>
-								</div>
-							</div>
-							<span class="nombre_programa">HTML5</span>
-						</div>
-						<div class="programa">
-							<div id="activeBorder" class="active-border">
-								<div id="circle" class="circle">
-									<span class="prec 320" id="prec">Css</span>
-								</div>
-							</div>
-							<span class="nombre_programa">CSS3</span>
-						</div>
-						<div class="programa">		
-							<div id="activeBorder" class="active-border">
-								<div id="circle" class="circle">
-									<span class="prec 320" id="prec">JS</span>
-								</div>
-							</div>
-							<span class="nombre_programa">JavaScript</span>
-						</div>
-						<div class="programa">
-							<div id="activeBorder" class="active-border">
-								<div id="circle" class="circle">
-									<span class="prec 320" id="prec">JQ</span>
-								</div>
-							</div>
-							<span class="nombre_programa">JQuery</span>
-						</div>
-						<div class="programa">
-							<div id="activeBorder" class="active-border">
-								<div id="circle" class="circle">
-									<span class="prec 320" id="prec">PHP</span>
-								</div>
-							</div>
-							<span class="nombre_programa">PHP</span>
-						</div>
-						<div class="programa">
-							<div id="activeBorder" class="active-border">
-								<div id="circle" class="circle">
-									<span class="prec 320" id="prec">MySQL</span>
-								</div>
-							</div>
-							<span class="nombre_programa">MySQL</span>
-						</div>
-						<div class="programa">
-							<div id="activeBorder" class="active-border">
-								<div id="circle" class="circle">
-									<span class="prec 320" id="prec">W</span>
-								</div>
-							</div>
-							<span class="nombre_programa">WordPress</span>
-						</div>
-						<div class="programa">
-							<div id="activeBorder" class="active-border">
-								<div id="circle" class="circle">
-									<span class="prec 320" id="prec">B</span>
-								</div>
-							</div>
-							<span class="nombre_programa">Bootstrap</span>
-						</div> -->
-						<img src="img/software/Layout sitio-14.png" alt=""><img src="img/software/Layout sitio-21.png" alt=""><img src="img/software/Layout sitio-06.png" alt=""><img src="img/software/Layout sitio-15.png" alt=""><img src="img/software/Layout sitio-20.png" alt=""><img src="img/software/Layout sitio-08.png" alt=""><img src="img/software/Layout sitio-09.png" alt=""><img src="img/software/Layout sitio-07.png" alt=""><img src="img/software/Layout sitio-19.png" alt=""><img src="img/software/Layout sitio-16.png" alt=""><img src="img/software/Layout sitio-10.png" alt=""><img src="img/software/Layout sitio-11.png" alt=""><img src="img/software/Layout sitio-18.png" alt=""><img src="img/software/Layout sitio-17.png" alt=""><img src="img/software/Layout sitio-13.png" alt=""><img src="img/software/Layout sitio-12.png" alt=""> 
-					</div>
+				<img src="img/software/Layout sitio-14.png" alt=""><img src="img/software/Layout sitio-21.png" alt=""><img src="img/software/Layout sitio-06.png" alt=""><img src="img/software/Layout sitio-15.png" alt=""><img src="img/software/Layout sitio-20.png" alt=""><img src="img/software/Layout sitio-08.png" alt=""><img src="img/software/Layout sitio-09.png" alt=""><img src="img/software/Layout sitio-07.png" alt=""><img src="img/software/Layout sitio-19.png" alt=""><img src="img/software/Layout sitio-16.png" alt=""><img src="img/software/Layout sitio-10.png" alt=""><img src="img/software/Layout sitio-11.png" alt=""><img src="img/software/Layout sitio-18.png" alt=""><img src="img/software/Layout sitio-17.png" alt=""><img src="img/software/Layout sitio-13.png" alt=""><img src="img/software/Layout sitio-12.png" alt=""> 
+			</div>
+		</div>
 
-			</section>
+	</section>
 
 </div>
-<section class="blanco">
-
-</section>
+<!-- <section class="blanco"></section> -->
 <a name="contacto">
 </a>
 <div class="contenido_contacto">

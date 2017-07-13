@@ -1,6 +1,6 @@
 <?php 
 
-$conexion=mysqli_connect('localhost','root','','u994690895_lfl') 
+$conexion=mysqli_connect('localhost','root','','id2231206_fernandez_long') 
 or die(mysqli_connect_error());
 
 
@@ -11,7 +11,8 @@ or die(mysqli_connect_error());
 //vacio= pass
 //libro= base de datos
 
-// nombre BD: u994690895_lfl
-// usuario mysql: u994690895_lfl
-// contraseña: lflbasededatos
+// serv: localhost
+// usuario: root
+// contraseña: justsmile2
+// base de datos: id2231206_fernandez_long
  ?>

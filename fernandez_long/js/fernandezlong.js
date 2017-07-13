@@ -102,4 +102,8 @@
 			},1);
 			
 		}
+
+
+
+		$('.galeria .foto a').fancybox();
 	});

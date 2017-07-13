@@ -1,12 +1,11 @@
-
 -- phpMyAdmin SQL Dump
--- version 3.5.2.2
+-- version 3.5.1
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 11-07-2017 a las 05:39:38
--- Versión del servidor: 10.1.24-MariaDB
--- Versión de PHP: 5.2.17
+-- Tiempo de generación: 12-07-2017 a las 06:17:01
+-- Versión del servidor: 5.5.24-log
+-- Versión de PHP: 5.4.3
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -55,7 +54,7 @@ CREATE TABLE IF NOT EXISTS `fernandez_long` (
   `pais` varchar(255) NOT NULL,
   `comentario` text NOT NULL,
   PRIMARY KEY (`idcomentario`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
 
 --
 -- Volcado de datos para la tabla `fernandez_long`
@@ -66,7 +65,10 @@ INSERT INTO `fernandez_long` (`idcomentario`, `nombre`, `email`, `pais`, `coment
 (2, 'lui', 'luisina.fl@hotmail.com', 'Argentina', 'prueba2'),
 (4, 'agus', 'agus@agus', 'MÃ©xico', 'hoal'),
 (5, 'agus', 'agus@agus', 'Estados Unidos', 'aaaaa'),
-(6, 'holaa', 'luisina.fl@hotmail.com', 'Venezuela', 'asjfl');
+(6, 'holaa', 'luisina.fl@hotmail.com', 'Venezuela', 'asjfl'),
+(7, 'frannnn', 'dgakjghkq@nsakjgf', 'Chile', 'kjfsdaj'),
+(8, 'luisina', 'lui@fernandezlong', 'Argentina', 'prueba de paso de mail'),
+(9, 'luisina', 'hola@hola', 'Argentina', 'segunda prueba');
 
 -- --------------------------------------------------------
 

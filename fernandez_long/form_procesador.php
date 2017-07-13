@@ -56,10 +56,10 @@
 			$contenido.="Mensaje: " . $comentarios;
 
 
-			$remitente_usuario="From:sitio web <www.luisinafernandezlong.com>";
-			$asunto_remitente='Recibimos tu consulta';
-			$contenido_usuario = $nombre . ' Enviaste el siguiente mensaje '.$comentarios . "\r\n";
-			$contenido_usuario.= 'A la brevedad responderé tu mensaje';
+			$remitente_usuario="From: 'Luisina Fernández Long'";
+			$asunto_remitente='Recibí tu consulta';
+			$contenido_usuario = 'Hola' . $nombre . "\r\n" .' Enviaste el siguiente mensaje: '.$comentarios . "\r\n" . "\r\n";
+			$contenido_usuario.= 'A la brevedad responderé tu mensaje,' . "\r\n" . 'Saludos' . "\r\n";
 
 			mail($destino,$asunto,$contenido,$remitente);
 			mail($email, $asunto_remitente, $contenido_usuario, $remitente_usuario);

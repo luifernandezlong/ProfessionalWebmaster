@@ -1,7 +1,14 @@
+:root {
+  --fucsia: #f4989e;
+  --naranja: #f7955a;
+}
 
 .holder, .nav{
     max-width: 760px;
     /*margin: 0 auto;*/
+}
+.holder{
+    height: auto;
 }
 /*NAV*/
 
@@ -77,6 +84,7 @@ hr.servicios2{
 
 /*QUIEN SOY*/
 .contenido_qs{
+    margin-top: 10%;
     padding: 0;
 }
 
@@ -157,7 +165,8 @@ h3.titulo_qs{
 /*INICIO SERVICIOS*/
 .contenido_servicios{
     height: 100%;
-    margin: 0 auto;
+    margin: 15% auto 0;
+    padding: 0;
 }
 .descripcion_servicios{
     margin: -1% 5% 0 5%;

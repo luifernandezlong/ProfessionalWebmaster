@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/fernandez_long.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/portfolio_extras.css">
+	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
 	<link rel="stylesheet" href="css/responsive-chico.css" media="handheld, screen and (min-width:230px) and (max-width:768px)"/>  
 	<link rel="stylesheet" href="css/responsive-medio.css" media="handheld, screen and (min-width:769px) and (max-width:1360px)"/> 
 </head>
@@ -23,39 +24,39 @@
 
 	<div class="extras_adentro">
 		<div class="cycle-slideshow extras_fotos" data-cycle-fx="scrollHorz" data-cycle-timeout="2000">
-		
+			<div class="cycle-pager"></div>
+			
 			<?php
-				include('conectar.php');
-				$sql="SELECT i.imagen FROM `trabajos` AS t JOIN `imagenes` AS i ON t.idtrabajos = i.idtrabajos WHERE t.idtrabajos =".$conexion->real_escape_string($id);
-				$result = $conexion->query($sql);
-				if ($result->num_rows > 0) {
-					while($row = $result->fetch_assoc()) {
-					 	echo '<img src="'.$row['imagen'].'" class="foto_extras">';
-				 	}
+			include('conectar.php');
+			$sql="SELECT i.imagen FROM `trabajos` AS t JOIN `imagenes` AS i ON t.idtrabajos = i.idtrabajos WHERE t.idtrabajos =".$conexion->real_escape_string($id);
+			$result = $conexion->query($sql);
+			if ($result->num_rows > 0) {
+				while($row = $result->fetch_assoc()) {
+					echo '<img src="'.$row['imagen'].'" class="foto_extras">';
 				}
-			 	$conexion->close();				
+			}
+			$conexion->close();				
 			?> 
 		</div>
 		<div class="extras_palabras">
 			<?php
-				include('conectar.php');
-				$sql = "SELECT t.nombre, t.descripcion, t.tags, c.nombrecat FROM `trabajos` AS t JOIN `categorias` AS c ON t.idcategoria = c.idcategoria WHERE t.idtrabajos =".$id;
-				$result = $conexion->query($sql);
-				if ($result->num_rows > 0) {
-				    while($row = $result->fetch_assoc()) {
-				    	 echo '<p class="nombre_extras">'.utf8_encode($row['nombre']).'</p>
-				    	<p class="descripcion_extras">'.utf8_encode($row['descripcion']).'</p>
+			include('conectar.php');
+			$sql = "SELECT t.nombre, t.descripcion, t.tags, c.nombrecat FROM `trabajos` AS t JOIN `categorias` AS c ON t.idcategoria = c.idcategoria WHERE t.idtrabajos =".$id;
+			$result = $conexion->query($sql);
+			if ($result->num_rows > 0) {
+				while($row = $result->fetch_assoc()) {
+									    	 echo '<p class="nombre_extras">'.mb_convert_encoding($row['nombre'], "UTF-8").'</p>
+				    	<p class="descripcion_extras">'.mb_convert_encoding($row['descripcion'], "UTF-8").'</p>
 						<h3 class="tipo_extras">CATEGORÍA</h3>
-							<p class="otros_extras">'.utf8_encode($row['nombrecat']).'</p>
+							<p class="otros_extras">'.mb_convert_encoding($row['nombrecat'], "UTF-8").'</p>
 						<h3 class="tipo_extras">TAGS</h3>
-							<p class="tags_extras">'.utf8_encode($row['tags']).'</p>
-							';
-				
-				    }
-				} else{
-					echo 'Ha ocurrido un error, por favor recargue el sitio.';
+							<p class="tags_extras">'.mb_convert_encoding($row['tags'], "UTF-8").'</p>';
+
 				}
-			 	$conexion->close();
+			} else{
+				echo 'Ha ocurrido un error, por favor recargue el sitio.';
+			}
+			$conexion->close();
 
 			?>
 		</div>
@@ -63,7 +64,7 @@
 		
 
 
-			<a class="volver" href="index.php #portfolio">← Volver al portfolio</a>
+		<a class="volver" href="/#portfolio">← Volver al portfolio</a>
 
 	</div>
 	
@@ -73,19 +74,20 @@
 
 	<script>
 	var images = [
-	    '<img src="http://malsup.github.io/images/p2.jpg">',
-	    '<img src="http://malsup.github.io/images/p3.jpg">',
-	    '<img src="http://malsup.github.io/images/p4.jpg">'
+	'<img src="http://malsup.github.io/images/p2.jpg">',
+	'<img src="http://malsup.github.io/images/p3.jpg">',
+	'<img src="http://malsup.github.io/images/p4.jpg">'
 	];
 
 	$('button').one('click', function() {
-	    for (var i=0; i < images.length; i++) {
-	        $('.cycle-slideshow').cycle('add', images[i]);
-	    }
-	    $(this).prop('disabled', true)
+		for (var i=0; i < images.length; i++) {
+			$('.cycle-slideshow').cycle('add', images[i]);
+		}
+		$(this).prop('disabled', true)
 	})
 	</script>
 	<script src="js/jquery.min.js" type="text/javascript"></script>
 	<script src="js/jquery.cycle2.js" type="text/javascript"></script>
+	<script src="js/fancybox/jquery.fancybox.js" type="text/javascript"></script>
 </body>
 </html>
