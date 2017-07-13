@@ -1,0 +1,167 @@
+:root {
+  --fucsia: #f4989e;
+  --naranja: #f7955a;
+}
+body{
+  height: auto;
+}
+.extras_adentro{
+  max-width: 960px;
+  height: 92%;
+  margin:0 auto;
+  margin-top: 8%;
+}
+
+.extras_palabras{
+  float: left;
+  max-width: 30%;
+  margin:0;
+}
+
+.extras_fotos{
+  margin-top: 3%;
+  float: right;
+  max-width: 65%;
+}
+.foto_extras{
+  max-width: 100%;
+}
+.descripcion_extras{
+  font-size: 1em;
+  color: gray;
+  padding-bottom: 2%;
+}
+
+
+.nombre_extras{
+  color:var(--naranja);
+  font-size: 1.5em;
+  line-height: 1.2em;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+
+.tipo_extras{
+  color:gray;
+  font-size: 1em;
+  font-weight: 300;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+.tags_extras{
+  color:gray;
+  font-size: 0.8em;
+  font-weight: 300;
+  
+}
+
+
+.otros_extras{
+  color: gray;
+  font-weight: 300;
+  font-size: 1em;
+  }
+
+.volver{
+  color:var(--fucsia);
+  /*color: black;*/
+  text-decoration: none;
+  font-size: 0.8em;
+  float: left;
+  margin-top: 3%;
+  clear: both;
+}
+
+
+
+
+
+/*SNACKBAR*/
+#snackbar {
+      visibility: hidden;
+      min-width: 250px;
+      margin-left: -125px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      border-radius: 2px;
+      padding: 16px;
+      position: fixed;
+      z-index: 1;
+      left: 50%;
+      bottom: 30px;
+      font-size: 17px;
+    }
+
+    #snackbar.show {
+      visibility: visible;
+      -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+      animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+
+    @-webkit-keyframes fadein {
+      from {bottom: 0; opacity: 0;} 
+      to {bottom: 30px; opacity: 1;}
+    }
+
+    @keyframes fadein {
+      from {bottom: 0; opacity: 0;}
+      to {bottom: 30px; opacity: 1;}
+    }
+
+    @-webkit-keyframes fadeout {
+      from {bottom: 30px; opacity: 1;} 
+      to {bottom: 0; opacity: 0;}
+    }
+
+    @keyframes fadeout {
+      from {bottom: 30px; opacity: 1;}
+      to {bottom: 0; opacity: 0;}
+    }
+
+
+
+
+
+
+
+
+@media screen and (max-width:1366px){
+    .extras_adentro{
+      max-width: 900px;
+      background-color: red;
+    }
+}
+@media screen and (max-width:960px){
+    .extras_adentro{
+      max-width: 700px;
+    }
+}
+@media screen and (max-width:700px){
+    .extras_adentro{
+      max-width: 500px;
+      margin-top:15%;
+    }
+     .extras_palabras{
+      float: none;
+    
+    }
+    .foto_extras{
+      float: none;
+    }
+    
+}
+@media screen and (max-width:500px){
+    .extras_adentro{
+      max-width: 300px;
+     margin-top:15%;
+    }
+    .extras_palabras{
+      float: none;
+    }
+    .foto_extras{
+      float: none;
+    }
+}
+
