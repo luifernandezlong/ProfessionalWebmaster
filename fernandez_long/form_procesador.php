@@ -33,20 +33,15 @@
 	</a>
 		<div class="contenido_contacto contacto">
 		<?php
-
 			include('conectar.php');
-
 			
 			
 			$nombre=$_POST['nombre'];
 			$email=$_POST['email'];
 			$pais=$_POST['pais'];
 			$comentarios=$_POST['comentarios'];
-
 			$resultado=mysqli_query($conexion, "INSERT INTO fernandez_long VALUES (NULL, '$nombre',
 				'$email', '$pais', '$comentarios')");
-
-
 			$remitente="From: $nombre <$email>";
 			$destino='luisina.fl@hotmail.com';
 			$asunto=$nombre . ' envio una consulta a traves de la web';
@@ -54,24 +49,16 @@
 			$contenido.="Mail: " . $email . "\r\n";
 			$contenido.="Pais: " . $pais . "\r\n";
 			$contenido.="Mensaje: " . $comentarios;
-
-
-			$remitente_usuario="From: 'Luisina Fernández Long'";
-			$asunto_remitente='Recibí tu consulta';
-			$contenido_usuario = 'Hola' . $nombre . "\r\n" .' Enviaste el siguiente mensaje: '.$comentarios . "\r\n" . "\r\n";
-			$contenido_usuario.= 'A la brevedad responderé tu mensaje,' . "\r\n" . 'Saludos' . "\r\n";
-
-			mail($destino,$asunto,$contenido,$remitente);
-			mail($email, $asunto_remitente, $contenido_usuario, $remitente_usuario);
-
+			$remitente_usuario="From:Luisina Fernandez Long <luisina.fl@hotmail.com>";
+			$asunto_remitente='Tu consulta fué recibida';
+			$contenido_usuario = 'Hola '.$nombre . '!'."\n".'Enviaste el siguiente mensaje: '.$comentarios . "\n";
+			$contenido_usuario.= 'A la brevedad responderé tu mensaje';
+			mail($destino,utf8_decode($asunto),utf8_decode($contenido),utf8_decode($remitente));
+			mail($email, utf8_decode($asunto_remitente),utf8_decode($contenido_usuario), $remitente_usuario);
 			header('location:index.php?envio=ok#contacto');
-
 			echo 'Tu mensaje se ha enviado correctamente'
-
 				// <button onclick="myFunction()">Show Snackbar</button>
-
 				// <div id="snackbar">Tu mensaje se ha enviado correctamente</div>
-
 			?>
 	<footer>
 		<span class="sp_foot">¿Queres otra forma para contactarme?</span><br>
