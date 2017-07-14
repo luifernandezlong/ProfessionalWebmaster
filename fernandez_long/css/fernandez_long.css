@@ -82,6 +82,24 @@ body{
     box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.50);
     
 }
+
+
+.nav{
+    max-width: 960px;
+    margin: -0.9% auto 0;
+    display: flex;
+}
+.nav_sitio{
+    width: 45%;
+    float: right;
+    padding: 0;
+
+}
+
+.nombre_nav{
+    width: 55%;
+    text-decoration: none;
+}
 h1{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -90,22 +108,8 @@ h1{
     text-align: left;
     padding: 0;
     line-height:0.25em;
-
-    max-width: 45%;
+    width: 100%;
 }
-
-.nav{
-    max-width: 960px;
-    margin: -0.9% auto 0;
-    display: flex;
-}
-.nav_sitio{
-    width: 55%;
-    float: right;
-    padding: 0;
-
-}
-
 .logo_nav, .img_logochico{
     visibility: hidden;
     height: 0.01em;
@@ -207,7 +211,7 @@ hr{
 .logo_chico{
     position: absolute;
     width: 20%;
-    margin:15% -10%; 
+    margin:10% -10%; 
     animation: scale 0.95s infinite ease-out;
     transform-origin: center;
     
@@ -287,7 +291,7 @@ hr.servicios2{
 .frase{
     color: white;
     font-weight: 400;
-    padding-top: 45%;
+    padding-top: 40%;
     margin-bottom: 7%;
     visibility: hidden;
 }
@@ -313,7 +317,7 @@ hr.servicios2{
     -webkit-transition: all 0.5s;
     moz-webkit-transition:all 0.5s;
     o-webkit-transition:all 0.5s;
-    margin:15% -4%;
+    margin:10% -3%;
     animation-play-state: paused;
 }
 

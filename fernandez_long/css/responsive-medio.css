@@ -13,9 +13,7 @@
 /*NAV*/
 
 
-.nav_sitio{
-    width:60%;
-}
+
 .nav_sitio ul li a{
     font-size: 0.93em;
 
@@ -24,8 +22,7 @@
 
 .nav h1{
     font-size: 1.7em;
-    line-height: 0.5em;
-    width: 40%;
+    line-height: 0.2em;
 }
 
 hr.portfolio{
@@ -73,7 +70,7 @@ hr.servicios2{
     -webkit-transition: all 0.5s;
     moz-webkit-transition:all 0.5s;
     o-webkit-transition:all 0.5s;
-    margin:15% -4%;
+    margin:10% -4%;
 }
 
 /*FIN INICIO*/

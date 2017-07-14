@@ -33,24 +33,22 @@
 
 
 <body><!-- 					INICIO 						-->
-	<a name="home"> </a>
-	<div class="fotofondo" ></div> <!-- esta es mi foto --> 
-	<a name="home_responsive">
-		<div class="fondo_inicio">
-			<center><img src="img/logo-01.png" alt="logo" class="logo_chico" /><!-- este mi logo --></center>
-			<div class="holder"> 
-				<div class="frase">
-					<span class="cita"> “El diseño es el embajador silencioso de una marca”</span>
-					<span class="autor"> -Paul Rand</span>
-				</div>
-				<a href="#home_responsive"></a><nav class="nav_home">
+<a name="home"> </a>
+<div class="fotofondo" ></div> <!-- esta es mi foto --> 
+	<div class="fondo_inicio">
+		<div class="holder"> 
+			<center><img src="img/logo-01.png" alt="logo" class="logo_chico" /></center>
+			<div class="frase">
+				<span class="cita"> “El diseño es el embajador silencioso de una marca”</span>
+				<span class="autor"> -Paul Rand</span>
+			</div>
+			<a href="#home_responsive"></a><nav class="nav_home">
 				<ul>
 					<li><a href="#portfolio" title="" class=" foc_port nav_izquierda nav_active">PORTFOLIO<hr class="portfolio"></a></li><li><a href="#quien_soy" class="foc_qs  nav_centro nav_active">QUIEN SOY<hr class="quien_soy"></a></li><li><a href="#servicios" title="" class="foc_s nav_centro nav_active">SERVICIOS<hr class="servicios2"></a></li><li><a href="#contacto" title="" class="foc_con nav_derecha nav_active">CONTACTO<hr class="contacto"></a></li>
 				</ul>
 			</nav>
 		</div>
 	</div>
-</a>
 
 
 <!-- 					FIN DE INICIO  				-->
@@ -260,6 +258,16 @@ include('inc/nav_sitio.php');
 AOS.init();
 
 </script>
-
+<!-- Hotjar Tracking Code for https://luisinafernadezlong.000webhostapp.com/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:563790,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
 </body>
 </html>

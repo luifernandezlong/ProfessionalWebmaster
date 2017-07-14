@@ -58,7 +58,7 @@ hr:hover{
 }
 
 .nav_home ul li a{
-	padding-bottom: 20%;
+	padding-bottom: 30%;
   display: flex;
   justify-content:center;
   flex-direction:column;
